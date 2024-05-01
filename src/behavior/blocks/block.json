@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "bedrock_schemas.behavior.blocks.block",
+  "required": [
+    "format_version",
+    "minecraft:block"
+  ],
+  "type": "object",
+  "title": "Block Behavior",
+  "description": "The minecraft block behavior specification.",
+  "additionalProperties": false,
+  "properties": {
+    "format_version": { "$ref": "../../common/semver/format_version.json" },
+    "minecraft:block": { "$ref": "../../common/semver/format_version.json" }
+  }
+}

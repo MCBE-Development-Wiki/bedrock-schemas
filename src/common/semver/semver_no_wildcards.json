@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "bedrock_schema.common.semver.semver_no_wildcards",
+  "title": "Semantic Version disallowing wildcards",
+  "description": "Semantic Version disallowing wildcards.",
+  "oneOf": [
+    {
+      "type": "array",
+      "maxItems": 3,
+      "minItems": 3,
+      "items": {
+        "type": "integer"
+      }
+    },
+    {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]*)(\\.(0|[1-9][0-9]*)(\\.(0|[1-9][0-9]*)(?:-((?:(?:(?:(?:0[0-9]*[A-Za-z-])|[1-9A-Za-z-])[0-9A-Za-z-]*)|0)(?:\\.(?:(?:(?:(?:0[0-9]*[A-Za-z-])|[1-9A-Za-z-])[0-9A-Za-z-]*)|0))*))?(?:\\+([0-9A-Za-z-]+(?:\\.[0-9A-Za-z-]+)*))?)?)?$"
+    }
+  ]
+}

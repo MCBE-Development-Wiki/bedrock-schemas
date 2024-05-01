@@ -1,0 +1,45 @@
+# This is a basic workflow to help you get started with Actions, modified from https://github.com/Blockception/Minecraft-bedrock-json-schemas/blob/main/.github/workflows/compress-json-schemas.yml
+
+name: 🖥️ Compress Json Schemas
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "**/*.json"
+
+  workflow_dispatch:
+
+concurrency:
+  group: compress-schemas
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: 🖥️ Compress Schemas
+    steps:
+      - name: 📦 Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: ⌛ Get Time
+        id: time
+        uses: nanzm/get-time-action@v2.0
+        with:
+          timeZone: UTC+8
+          format: "YYYY-MM-DD"
+
+      - name: 💾 Compress Json
+        uses: DaanV2/Json-Schema-Action-Compression@v2.1
+        with:
+          specificationFile: "${{github.workspace}}/source/compress_specification.json"
+
+      - name: ✏️ Commit changes
+        continue-on-error: true
+        run: |
+          cd ${{github.workspace}}
+          git config --global user.email "contact@mcbe-dev.net"
+          git config --global user.name "BEDW Bot"
+          git add .
+          git commit -m "auto: generated json schemas ${{ steps.time.outputs.time }}"
+          git push

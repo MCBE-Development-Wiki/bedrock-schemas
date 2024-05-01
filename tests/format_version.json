@@ -1,0 +1,5 @@
+{
+  "$schema": "../src/behavior/blocks/block.json",
+  "format_version": 1.91,
+  "minecraft:block": "minecraft:stone"
+}

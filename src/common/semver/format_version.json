@@ -1,0 +1,15 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "bedrock_schema.common.semver.format_version",
+  "title": "Format Version",
+  "description": "A common format version allowing a number or a non-wildcards semver.",
+  "oneOf": [
+    {
+      "type": "number",
+      "multipleOf": 0.1
+    },
+    {
+      "#ref": "semver.json"
+    }
+  ]
+}
