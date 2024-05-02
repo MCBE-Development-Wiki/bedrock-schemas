@@ -41,5 +41,5 @@ jobs:
           git config --global user.email "contact@mcbe-dev.net"
           git config --global user.name "BEDW Bot"
           git add .
-          git commit -m "auto: generated json schemas ${{ steps.time.outputs.time }}"
+          git commit -m "[auto] generated json schemas ${{ steps.time.outputs.time }}"
           git push

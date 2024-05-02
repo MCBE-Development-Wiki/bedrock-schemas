@@ -1,5 +1,13 @@
 {
-  "$schema": "../src/behavior/blocks/block.json",
-  "format_version": [1, 2, 3],
-  "minecraft:block": "minecraft:stone"
+  "$schema": "../src/behavior/items/item.json",
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "example:example_item",
+      "category": "nature"
+    },
+    "components": {
+      "minecraft:max_stack_size": 32
+    }
+  }
 }
