@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "bedrock_schemas.behavior.items.minecraft:can_destroy_in_creative",
+  "title": "minecraft:can_destroy_in_creative",
+  "description": "The can_destroy_in_creative component determines if the item can be used by a player to break blocks when in creative mode.",
+  "oneOf": [
+    {
+      "type": "boolean",
+      "$comment": "version:1.16.100|[1.17.0,1.20.10);deprecated:[1.20.10,*)"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "value": {
+          "description": "Determines whether the item can be used to destroy blocks while in creative mode.",
+          "type": "boolean"
+        }
+      },
+      "$comment": "version:[1.20.10,*)"
+    }
+  ],
+  "$comment": "version:1.16.100|[1.17.0,*);experiment:1.16.100|[1.17.0,1.20.10)"
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "bedrock_schemas.behavior.items.minecraft:use_duration",
+  "oneOf": [
+    {
+      "type": "number",
+      "default": 0.0,
+      "$comment": "version:[1.10.0,1.20.20);deprecated:[1.20.20,1.20.50)"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "number"
+        }
+      },
+      "$comment": "version:[1.20.20,1.20.50)"
+    }
+  ],
+  "$comment": "experiment:1.16.100|[1.17.0,1.20.20)"
+}

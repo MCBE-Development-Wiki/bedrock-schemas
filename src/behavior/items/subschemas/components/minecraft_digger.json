@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "bedrock_schemas.behavior.items.minecraft:digger",
+  "title": "minecraft:digger",
+  "description": "Digger item component specifies how quickly this item can dig specific blocks.",
+  "type": "object",
+  "properties": {
+    "destroy_speeds": {
+      "title": "sequence container (class std::vector<struct Puv::v1_20_50::DiggerItemComponent::BlockInfo,class std::allocator<struct Puv::v1_20_50::DiggerItemComponent::BlockInfo> >)",
+      "description": "A list of blocks to dig with correlating speeds of digging.",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/3421086714"
+      }
+    },
+    "use_efficiency": {
+      "description": "Determines whether this item should be impacted if the efficiency enchantment is applied to it.",
+      "type": "boolean"
+    },
+    "on_consume": {
+      "description": "Event trigger for when the item is consumed.",
+      "$ref": "../../../../common/item/definition_trigger.json",
+      "$comment": "version:1.16.100|[1.17.0,1.20.30);deprecated:[1.20.30,*)"
+    }
+  },
+  "$defs": {
+    "3421086714": {
+      "title": "struct Puv::v1_20_50::DiggerItemComponent::BlockInfo",
+      "type": "object",
+      "properties": {
+        "block": {
+          "description": "Block to be dug.",
+          "$ref": "../../../../common/block/block_descriptor.json"
+        },
+        "speed": {
+          "description": "Digging speed for the correlating block(s).",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "block",
+        "speed"
+      ]
+    }
+  },
+  "$comment": "version:1.16.100|[1.17.0,*);experiment:1.16.100|[1.17.0,1.20.20)"
+}

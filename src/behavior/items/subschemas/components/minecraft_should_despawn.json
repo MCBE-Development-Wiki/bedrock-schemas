@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "bedrock_schemas.behavior.items.minecraft:should_despawn",
+  "title": "minecraft:should_despawn",
+  "description": "Should_despawn component determines if the item should eventually despawn while floating in the world",
+  "oneOf": [
+    {
+      "type": "boolean",
+      "$comment": "version:1.16.100|[1.17.0,1.20.20);deprecated:[1.20.20,*)"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "value": {
+          "description": "Determines whether the item should eventually despawn while floating in the world.",
+          "type": "boolean"
+        }
+      },
+      "$comment": "version:[1.20.20,*)"
+    }
+  ],
+  "$comment": "version:1.16.100|[1.17.0,*);experiment:1.16.100|[1.17.0,1.20.20)"
+}

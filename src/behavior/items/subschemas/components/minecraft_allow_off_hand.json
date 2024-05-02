@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "bedrock_schemas.behavior.items.minecraft:allow_off_hand",
+  "title": "minecraft:allow_off_hand",
+  "description": "The allow_off_hand component determines whether the item can be placed in the off hand slot of the inventory.",
+  "oneOf": [
+    {
+      "type": "boolean",
+      "$comment": "version:1.16.100|[1.17.0,1.20.20);deprecated:[1.20.20,*)"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "value": {
+          "description": "Determines whether the item can be placed in the off hand slot.",
+          "type": "boolean"
+        }
+      },
+      "$comment": "version:[1.20.20,*)"
+    }
+  ],
+  "$comment": "version:1.16.100|[1.17.0,*);experiment:1.16.100|[1.17.0,1.20.20)"
+}

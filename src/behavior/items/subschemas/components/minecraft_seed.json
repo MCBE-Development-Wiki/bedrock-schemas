@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "bedrock_schemas.behavior.items.minecraft:seed",
+  "type": "object",
+  "properties": {
+    "crop_result": {
+      "type": "string"
+    },
+    "plant_at": {
+      "type": "array",
+      "items": {
+        "$ref": "../../../common/block/block_descriptor.json"
+      }
+    },
+    "plant_at_any_solid_surface": {
+      "type": "boolean",
+      "default": false
+    },
+    "plant_at_face": {
+      "type": "string",
+      "enum": [
+        "up",
+        "down",
+        "east",
+        "west",
+        "north",
+        "south"
+      ]
+    }
+  },
+  "$comment": "version:[1.10.0,1.16.100)|(1.16.100,1.17.0)"
+}

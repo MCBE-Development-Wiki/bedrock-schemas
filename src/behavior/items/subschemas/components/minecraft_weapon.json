@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "bedrock_schemas.behavior.items.minecraft:weapon",
+  "description": "Weapon Item Component. Added to every weapon item such as axe, sword, trident, bow, crossbow.",
+  "type": "object",
+  "properties": {
+    "on_hurt_entity": {
+      "description": "Trigger for letting you know when this item is used to hurt another mob",
+      "$ref": "../../../../common/item/definition_trigger.json"
+    },
+    "on_not_hurt_entity": {
+      "description": "Trigger for letting you know when this item hit another actor, but didn't do damage",
+      "$ref": "../../../../common/item/definition_trigger.json"
+    },
+    "on_hit_block": {
+      "description": "Trigger for letting you know when this item is used to hit a block",
+      "$ref": "../../../../common/item/definition_trigger.json"
+    }
+  },
+  "$comment": "version:1.16.100|[1.17.0,1.20.40);deprecated:[1.20.40,*)"
+}

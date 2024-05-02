@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "bedrock_schemas.behavior.items.minecraft:hover_text_color",
+  "title": "minecraft:hover_text_color",
+  "description": "The hover_text_color component specifies the color of the item name when the players hovers the cursor over the item.",
+  "oneOf": [
+    {
+      "type": "string",
+      "enum": [
+        "escape",
+        "black",
+        "dark_blue",
+        "dark_green",
+        "dark_aqua",
+        "dark_purple",
+        "gold",
+        "gray",
+        "dark_gray",
+        "blue",
+        "green",
+        "aqua",
+        "red",
+        "light_purple",
+        "yellow",
+        "white",
+        "minecoin_gold",
+        "material_quartz",
+        "material_iron",
+        "material_netherite",
+        "material_redstone",
+        "material_copper",
+        "material_gold",
+        "material_emerald",
+        "material_diamond",
+        "material_lapis",
+        "material_amethyst",
+        "obfuscated",
+        "bold",
+        "italic",
+        "reset"
+      ],
+      "$comment": "version:1.16.100|[1.17.0,1.20.10);deprecated:[1.20.10,*)"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "value": {
+          "description": "Specifies the color of the item's hover text.",
+          "type": "string",
+          "enum": [
+            "escape",
+            "black",
+            "dark_blue",
+            "dark_green",
+            "dark_aqua",
+            "dark_purple",
+            "gold",
+            "gray",
+            "dark_gray",
+            "blue",
+            "green",
+            "aqua",
+            "red",
+            "light_purple",
+            "yellow",
+            "white",
+            "minecoin_gold",
+            "material_quartz",
+            "material_iron",
+            "material_netherite",
+            "material_redstone",
+            "material_copper",
+            "material_gold",
+            "material_emerald",
+            "material_diamond",
+            "material_lapis",
+            "material_amethyst",
+            "obfuscated",
+            "bold",
+            "italic",
+            "reset"
+          ]
+        }
+      },
+      "$comment": "version:[1.20.10,*)"
+    }
+  ],
+  "$comment": "version:1.16.100|[1.17.0,*);experiment:1.16.100|[1.17.0,1.20.10)"
+}

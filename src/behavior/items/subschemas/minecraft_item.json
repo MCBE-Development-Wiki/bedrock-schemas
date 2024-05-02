@@ -57,392 +57,145 @@
       "type": "object",
       "properties": {
         "minecraft:max_damage": {
-          "type": "integer",
-          "default": 0,
-          "$comment": "version:[1.10.0,1.16.100)|(1.16.100,1.17.0)"
+          "$ref": "./components/minecraft_max_damage.json"
         },
         "minecraft:seed": {
-          "type": "object",
-          "$comment": "version:[1.10.0,1.16.100)|(1.16.100,1.17.0)"
+          "$ref": "./components/minecraft_seed.json"
         },
         "minecraft:camera": {
-          "type": "object",
-          "$comment": "version:[1.10.0,1.16.100)|(1.16.100,1.17.0)"
+          "$ref": "./components/minecraft_camera.json"
         },
         "minecraft:block": {
-          "type": "string"
+          "$ref": "./components/minecraft_block.json"
         },
         "minecraft:can_destroy_in_creative": {
-          "oneOf": [
-            {
-              "type": "boolean",
-              "$comment": "version:1.16.100|[1.17.0,1.20.10);deprecated:[1.20.10,*)"
-            },
-            {
-              "type": "object",
-              "$comment": "version:[1.20.10,*)"
-            }
-          ],
-          "$comment": "experiment:1.16.100|[1.170,1.20.10)"
+          "$ref": "./components/minecraft_can_destroy_in_creative.json"
         },
         "minecraft:max_stack_size": {
-          "oneOf": [
-            {
-              "type": "integer",
-              "default": 64,
-              "maximum": 64,
-              "minimum": 1,
-              "$comment": "version:[1.10.0,1.20.10);deprecated:[1.20.10,*)"
-            },
-            {
-              "type": "object",
-              "$comment": "version:[1.20.10,*)"
-            }
-          ],
-          "$comment": "experiment:1.16.100|[1.170,1.20.10)"
+          "$ref": "./components/minecraft_max_stack_size.json"
         },
         "minecraft:hover_text_color": {
-          "oneOf": [
-            {
-              "type": "string",
-              "enum": [
-                "escape",
-                "black",
-                "dark_blue",
-                "dark_green",
-                "dark_aqua",
-                "dark_purple",
-                "gold",
-                "gray",
-                "dark_gray",
-                "blue",
-                "green",
-                "aqua",
-                "red",
-                "light_purple",
-                "yellow",
-                "white",
-                "minecoin_gold",
-                "material_quartz",
-                "material_iron",
-                "material_netherite",
-                "material_redstone",
-                "material_copper",
-                "material_gold",
-                "material_emerald",
-                "material_diamond",
-                "material_lapis",
-                "material_amethyst",
-                "obfuscated",
-                "bold",
-                "italic",
-                "reset"
-              ],
-              "$comment": "version:1.16.100|[1.17.0,1.20.10);deprecated:[1.20.10,*)"
-            },
-            {
-              "type": "object",
-              "$comment": "version:[1.20.10,*)"
-            }
-          ],
-          "$comment": "experiment:1.16.100|[1.170,1.20.10)"
+          "$ref": "./components/minecraft_hover_text_color.json"
         },
         "minecraft:stacked_by_data": {
-          "oneOf": [
-            {
-              "type": "boolean",
-              "default": false,
-              "$comment": "version:[1.10.0,1.20.20);deprecated:[1.20.20,*)"
-            },
-            {
-              "type": "object",
-              "$comment": "version:[1.20.20,*)"
-            }
-          ],
-          "$comment": "experiment:1.16.100|[1.170,1.20.20)"
+          "$ref": "./components/minecraft_stacked_by_data.json"
         },
         "minecraft:hand_equipped": {
-          "oneOf": [
-            {
-              "type": "boolean",
-              "default": false,
-              "$comment": "version:[1.10.0,1.20.20);deprecated:[1.20.20,*)"
-            },
-            {
-              "type": "object",
-              "$comment": "version:[1.20.20,*)"
-            }
-          ],
-          "$comment": "experiment:1.16.100|[1.170,1.20.20)"
+          "$ref": "./components/minecraft_hand_equipped.json"
         },
         "minecraft:liquid_clipped": {
-          "oneOf": [
-            {
-              "type": "boolean",
-              "$comment": "version:1.16.100|[1.17.0,1.20.20);deprecated:[1.20.20,*)"
-            },
-            {
-              "type": "object",
-              "$comment": "version:[1.20.20,*)"
-            }
-          ],
-          "$comment": "experiment:1.16.100|[1.170,1.20.20)"
+          "$ref": "./components/minecraft_liquid_clipped.json"
         },
         "minecraft:allow_off_hand": {
-          "oneOf": [
-            {
-              "type": "boolean",
-              "$comment": "version:1.16.100|[1.17.0,1.20.20);deprecated:[1.20.20,*)"
-            },
-            {
-              "type": "object",
-              "$comment": "version:[1.20.20,*)"
-            }
-          ],
-          "$comment": "experiment:1.16.100|[1.170,1.20.20)"
+          "$ref": "./components/minecraft_allow_off_hand.json"
         },
         "minecraft:damage": {
-          "oneOf": [
-            {
-              "type": "integer",
-              "$comment": "version:1.16.100|[1.17.0,1.20.20);deprecated:[1.20.20,*)"
-            },
-            {
-              "type": "object",
-              "$comment": "version:[1.20.20,*)"
-            }
-          ],
-          "$comment": "experiment:1.16.100|[1.170,1.20.20)"
+          "$ref": "./components/minecraft_damage.json"
         },
         "minecraft:should_despawn": {
-          "oneOf": [
-            {
-              "type": "boolean",
-              "$comment": "version:1.16.100|[1.17.0,1.20.20);deprecated:[1.20.20,*)"
-            },
-            {
-              "type": "object",
-              "$comment": "version:[1.20.20,*)"
-            }
-          ],
-          "$comment": "experiment:1.16.100|[1.170,1.20.20)"
+          "$ref": "./components/minecraft_should_despawn.json"
         },
         "minecraft:use_animation": {
-          "oneOf": [
-            {
-              "type": "string",
-              "enum": [
-                "none",
-                "eat",
-                "drink",
-                "block",
-                "bow",
-                "camera",
-                "crossbow",
-                "spear",
-                "spyglass",
-                "brush"
-              ],
-              "$comment": "version:1.16.100|[1.17.0,1.20.20);deprecated:[1.20.20,*)"
-            },
-            {
-              "type": "object",
-              "$comment": "version:[1.20.20,*)"
-            }
-          ],
-          "$comment": "experiment:1.16.100|[1.170,1.20.20)"
+          "$ref": "./components/minecraft_use_animation.json"
         },
         "minecraft:use_duration": {
-          "oneOf": [
-            {
-              "type": "number",
-              "default": 0,
-              "$comment": "version:[1.10.0,1.20.20);deprecated:[1.20.20,1.20.50)"
-            },
-            {
-              "type": "object",
-              "$comment": "version:[1.20.20,1.20.50)"
-            }
-          ],
-          "$comment": "experiment:1.16.100|[1.170,1.20.20)"
+          "$ref": "./components/minecraft_use_duration.json"
         },
         "minecraft:use_modifiers": {
-          "type": "object",
-          "$comment": "version:[1.20.50,*)"
+          "$ref": "./components/minecraft_use_modifiers.json"
         },
         "minecraft:foil": {
-          "type": "boolean",
-          "default": false
+          "$ref": "./components/minecraft_foil.json"
         },
         "minecraft:mining_speed": {
-          "type": "integer"
+          "$ref": "./components/minecraft_mining_speed.json"
         },
         "minecraft:enchantable": {
-          "type": "object",
-          "$comment": "experiment:1.16.100|[1.170,1.20.30)"
+          "$ref": "./components/minecraft_enchantable.json"
         },
         "minecraft:frame_count": {
-          "type": "integer"
+          "$ref": "./components/minecraft_frame_count.json"
         },
         "minecraft:creative_category": {
-          "type": "object",
-          "properties": {
-            "parent": {
-              "type": "string",
-              "$comment": "version:1.16.100|[1.17.0,1.20.20);deprecated:[1.20.20,*)"
-            },
-            "category": {
-              "type": "string",
-              "enum": [
-                "all",
-                "construction",
-                "nature",
-                "equipment",
-                "items",
-                "commands",
-                "none"
-              ],
-              "$comment": "version:1.16.100|[1.17.0,1.20.20);deprecated:[1.20.20,*)"
-            }
-          }
+          "$ref": "./components/minecraft_creative_category.json"
         },
         "minecraft:render_offsets": {
-          "oneOf": [
-            {
-              "type": "string",
-              "$comment": "deprecated:1.16.100|[1.17.0,*)"
-            },
-            {
-              "type": "object",
-              "$comment": "version:1.16.100|[1.17.0,1.20.10);deprecated:[1.20.10,*)"
-            }
-          ]
+          "$ref": "./components/minecraft_render_offsets.json"
         },
         "minecraft:glint": {
-          "oneOf": [
-            {
-              "type": "boolean",
-              "$comment": "deprecated:1.16.100|[1.17.0,*)"
-            },
-            {
-              "type": "object",
-              "$comment": "version:1.16.100|[1.17.0,*)"
-            }
-          ],
-          "$comment": "experiment:1.16.100|[1.170,1.20.20)"
+          "$ref": "./components/minecraft_glint.json"
         },
         "minecraft:interact_button": {
-          "oneOf": [
-            {
-              "type": "boolean",
-              "$comment": "deprecated:1.16.100|[1.17.0,*)"
-            },
-            {
-              "type": "string",
-              "$comment": "deprecated:1.16.100|[1.17.0,*)"
-            },
-            {
-              "type": "object",
-              "$comment": "version:1.16.100|[1.17.0,*)"
-            }
-          ],
-          "$comment": "experiment:1.16.100|[1.170,1.20.30)"
+          "$ref": "./components/minecraft_interact_button.json"
         },
         "minecraft:icon": {
-          "oneOf": [
-            {
-              "type": "string",
-              "$comment": "deprecated:[1.20.0,*)"
-            },
-            {
-              "type": "object",
-              "$comment": "version:1.16.100|[1.17.0,*)"
-            }
-          ],
-          "$comment": "experiment:1.16.100|[1.170,1.20.0)"
+          "$ref": "./components/minecraft_icon.json"
         },
         "minecraft:armor": {
-          "type": "object",
-          "$comment": "version:1.16.100|[1.17.0,1.20.20);deprecated:[1.20.20,*)"
+          "$ref": "./components/minecraft_armor.json"
         },
         "minecraft:item_storage": {
-          "type": "object"
+          "$ref": "./components/minecraft_item_storage.json"
         },
         "minecraft:chargeable": {
-          "type": "object",
-          "$comment": "version:1.16.100|[1.17.0,1.20.50);deprecated:[1.20.50,*)"
+          "$ref": "./components/minecraft_chargeable.json"
         },
         "minecraft:cooldown": {
-          "type": "object",
-          "$comment": "experiment:1.16.100|[1.170,1.20.10)"
+          "$ref": "./components/minecraft_cooldown.json"
         },
         "minecraft:durability": {
-          "type": "object",
-          "$comment": "experiment:1.16.100|[1.170,1.20.0)"
+          "$ref": "./components/minecraft_durability.json"
         },
         "minecraft:digger": {
-          "type": "object",
-          "$comment": "experiment:1.16.100|[1.170,1.20.20)"
+          "$ref": "./components/minecraft_digger.json"
         },
         "minecraft:display_name": {
-          "type": "object",
-          "$comment": "experiment:1.16.100|[1.170,1.20.0)"
+          "$ref": "./components/minecraft_display_name.json"
         },
         "minecraft:entity_placer": {
-          "type": "object",
-          "$comment": "experiment:1.16.100|[1.170,1.20.0)"
+          "$ref": "./components/minecraft_entity_placer.json"
         },
         "minecraft:food": {
-          "type": "object",
-          "$comment": "experiment:1.16.100|[1.170,1.20.30)"
+          "$ref": "./components/minecraft_food.json"
         },
         "minecraft:fuel": {
-          "type": "object",
-          "$comment": "experiment:1.16.100|[1.170,1.20.0)"
+          "$ref": "./components/minecraft_fuel.json"
         },
         "minecraft:on_use": {
-          "type": "object",
-          "$comment": "version:1.16.100|[1.17.0,1.20.40);deprecated:[1.20.40,*)"
+          "$ref": "./components/minecraft_on_use.json"
         },
         "minecraft:on_use_on": {
-          "type": "object",
-          "$comment": "version:1.16.100|[1.17.0,1.20.40);deprecated:[1.20.40,*)"
+          "$ref": "./components/minecraft_on_use_on.json"
         },
         "minecraft:block_placer": {
-          "type": "object",
-          "$comment": "experiment:1.16.100|[1.170,1.20.10)"
+          "$ref": "./components/minecraft_block_placer.json"
         },
         "minecraft:projectile": {
-          "type": "object",
-          "$comment": "experiment:1.16.100|[1.170,1.20.10)"
+          "$ref": "./components/minecraft_projectile.json"
         },
         "minecraft:repairable": {
-          "type": "object",
-          "$comment": "experiment:1.16.100|[1.170,1.20.10)"
+          "$ref": "./components/minecraft_repairable.json"
         },
         "minecraft:shooter": {
-          "type": "object",
-          "$comment": "experiment:1.16.100|[1.170,1.20.10)"
+          "$ref": "./components/minecraft_shooter.json"
         },
         "minecraft:throwable": {
-          "type": "object",
-          "$comment": "experiment:1.16.100|[1.170,1.20.10)"
+          "$ref": "./components/minecraft_throwable.json"
         },
         "minecraft:weapon": {
-          "type": "object",
-          "$comment": "version:1.16.100|[1.17.0,1.20.40);deprecated:[1.20.40,*)"
+          "$ref": "./components/minecraft_weapon.json"
         },
         "minecraft:wearable": {
-          "type": "object",
-          "$comment": "experiment:1.16.100|[1.170,1.20.20)"
+          "$ref": "./components/minecraft_wearable.json"
         },
         "minecraft:record": {
-          "type": "object",
-          "$comment": "experiment:1.16.100|[1.170,1.20.10)"
+          "$ref": "./components/minecraft_record.json"
+        },
+        "minecraft:custom_components": {
+          "$ref": "./components/minecraft_custom_components.json"
         },
         "minecraft:tags": {
-          "type": "object",
-          "$comment": "experiment:1.16.100|[1.170,1.20.50)"
+          "$ref": "./components/minecraft_tags.json"
         }
       },
       "patternProperties": {

@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "bedrock_schemas.common.struct.int_range",
+  "title": "struct Puv::IntRange",
+  "type": "object",
+  "properties": {
+    "max": {
+      "type": "integer"
+    },
+    "min": {
+      "type": "integer"
+    }
+  }
+}

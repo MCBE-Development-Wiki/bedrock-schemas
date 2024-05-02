@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "bedrock_schemas.common.molang.expression_node_no_version",
+  "oneOf": [
+    {
+      "type": "string",
+      "format": "molang"
+    },
+    {
+      "type": "boolean"
+    },
+    {
+      "type": "number"
+    }
+  ]
+}

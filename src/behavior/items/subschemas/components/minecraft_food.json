@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "bedrock_schemas.behavior.items.minecraft:food",
+  "title": "minecraft:food",
+  "description": "When an item has a food component, it becomes edible to the player. Must have the 'minecraft:use_duration' component in order to function properly.",
+  "type": "object",
+  "properties": {
+    "can_always_eat": {
+      "description": "If true you can always eat this item (even when not hungry). Default is set to false.",
+      "type": "boolean"
+    },
+    "nutrition": {
+      "description": "Value that is added to the entity's nutrition when the item is used. Default is set to 0.",
+      "type": "integer"
+    },
+    "saturation_modifier": {
+      "oneOf": [
+        {
+          "description": "saturation_modifier is used in this formula: (nutrition * saturation_modifier * 2) when applying the saturation buff. Default is set to 0.6.",
+          "type": "number",
+          "minimum": 0.0,
+          "$comment": "version:[1.18.0,*)"
+        },
+        {
+          "type": "string",
+          "enum": [
+            "poor",
+            "low",
+            "normal",
+            "good",
+            "max",
+            "supernatural",
+            "high"
+          ],
+          "$comment": "version:[1.10.0,1.18.0)"
+        }
+      ]
+    },
+    "using_converts_to": {
+      "description": "When used, converts to the item specified by the string in this field. Default does not convert item.",
+      "$ref": "../../../../common/item/item_descriptor.json"
+    },
+    "on_consume": {
+      "description": "Event trigger for when the item is consumed.",
+      "$ref": "../../../../common/item/definition_trigger.json",
+      "$comment": "version:1.16.100|[1.17.0,1.20.30);deprecated:[1.20.30,*)"
+    }
+  }
+}

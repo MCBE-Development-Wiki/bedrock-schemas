@@ -1,0 +1,6 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "bedrock_schemas.common.molang.expression_node_string",
+  "type": "string",
+  "format": "molang"
+}

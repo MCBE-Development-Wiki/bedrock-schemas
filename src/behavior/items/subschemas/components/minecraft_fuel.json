@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "bedrock_schemas.behavior.items.minecraft:fuel",
+  "title": "minecraft:fuel",
+  "description": "Fuel item component allows this item to be used as fuel in a furnace to 'cook' other items.",
+  "oneOf": [
+    {
+      "type": "number",
+      "minimum": 0.05
+    },
+    {
+      "type": "object",
+      "properties": {
+        "duration": {
+          "description": "Amount of time, in seconds, this fuel will cook items.",
+          "type": "number",
+          "minimum": 0.05
+        }
+      }
+    }
+  ],
+  "$comment": "version:1.16.100|[1.17.0,*);experiment:1.16.100|[1.17.0,1.20.0)"
+}

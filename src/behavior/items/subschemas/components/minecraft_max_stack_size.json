@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "bedrock_schemas.behavior.items.minecraft:max_stack_size",
+  "title": "minecraft:max_stack_size",
+  "description": "The max_stack_size component specifies how many of the item can be stacked together.",
+  "oneOf": [
+    {
+      "type": "integer",
+      "default": 64,
+      "minimum": 1,
+      "maximum": 64,
+      "$comment": "version:[1.10.0,1.20.10);deprecated:[1.20.10,*)"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "value": {
+          "description": "Specifies how many of the item that can be stacked.",
+          "type": "integer",
+          "default": 64,
+          "minimum": 1,
+          "maximum": 64
+        }
+      },
+      "$comment": "version:[1.20.10,*)"
+    }
+  ],
+  "$comment": "experiment:1.16.100|[1.17.0,1.20.10)"
+}

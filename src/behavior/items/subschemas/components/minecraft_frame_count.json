@@ -1,0 +1,6 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "bedrock_schemas.behavior.items.minecraft:frame_count",
+  "type": "integer",
+  "$comment": "version:1.16.100|[1.17.0,*)"
+}

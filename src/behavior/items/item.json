@@ -12,7 +12,6 @@
       "$ref": "./subschemas/minecraft_item.json"
     }
   },
-  "additionalProperties": false,
   "required": [
     "format_version",
     "minecraft:item"

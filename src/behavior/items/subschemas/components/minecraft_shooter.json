@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "bedrock_schemas.behavior.items.minecraft:shooter",
+  "title": "minecraft:shooter",
+  "description": "Shooter Item Component.",
+  "type": "object",
+  "properties": {
+    "ammunition": {
+      "title": "sequence container (class std::vector<struct Puv::v1_20_50::ShooterItemComponent::Ammunition,class std::allocator<struct Puv::v1_20_50::ShooterItemComponent::Ammunition> >)",
+      "description": "Ammunition.",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/2221989686"
+      }
+    },
+    "charge_on_draw": {
+      "description": "Charge on draw? Default is set to false.",
+      "type": "boolean"
+    },
+    "max_draw_duration": {
+      "description": "Draw Duration. Default is set to 0.",
+      "type": "number"
+    },
+    "scale_power_by_draw_duration": {
+      "description": "Scale power by draw duration? Default is set to false.",
+      "type": "boolean"
+    }
+  },
+  "$defs": {
+    "2221989686": {
+      "title": "struct Puv::v1_20_50::ShooterItemComponent::Ammunition",
+      "type": "object",
+      "properties": {
+        "item": {
+          "description": "Ammunition item description identifier.",
+          "$ref": "../../../../common/item/item_descriptor.json"
+        },
+        "search_inventory": {
+          "description": "Can search inventory? Default is set to false.",
+          "type": "boolean"
+        },
+        "use_in_creative": {
+          "description": "Can use in creative mode? Default is set to false.",
+          "type": "boolean"
+        },
+        "use_offhand": {
+          "description": "Can use off-hand? Default is set to false.",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "item"
+      ]
+    }
+  },
+  "$comment": "version:1.16.100|[1.17.0,*);experiment:1.16.100|[1.17.0,1.20.10)"
+}

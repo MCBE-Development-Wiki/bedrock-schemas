@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "bedrock_schemas.behavior.items.minecraft:item_storage",
+  "title": "minecraft:item_storage",
+  "description": "The Storage Item Component is used for storing Items within an Item's User Data",
+  "type": "object",
+  "properties": {
+    "capacity": {
+      "description": "The max capacity of the item. Default is 64",
+      "type": "integer",
+      "default": 64
+    }
+  },
+  "$comment": "version:1.16.100|[1.17.0,*)"
+}

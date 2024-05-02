@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "bedrock_schemas.behavior.items.minecraft:block_placer",
+  "title": "minecraft:block_placer",
+  "description": "Items with the block_placer component will place a block when used.",
+  "type": "object",
+  "properties": {
+    "block": {
+      "description": "Defines the block that will be placed.",
+      "type": "string"
+    },
+    "use_on": {
+      "title": "sequence container (class std::vector<struct Puv::v1_20_50::BlockDescriptor,class std::allocator<struct Puv::v1_20_50::BlockDescriptor> >)",
+      "description": "List of block descriptors of the blocks that this item can be used on. If left empty, all blocks will be allowed.",
+      "type": "array",
+      "items": {
+        "$ref": "../../../../common/block/block_descriptor.json"
+      }
+    }
+  },
+  "required": [
+    "block"
+  ],
+  "$comment": "version:1.16.100|[1.17.0,*);experiment:1.16.100|[1.17.0,1.20.10)"
+}

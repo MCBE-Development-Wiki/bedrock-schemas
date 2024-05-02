@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "bedrock_schemas.behavior.items.minecraft:entity_placer",
+  "title": "minecraft:entity_placer",
+  "description": "The entity_placer item component specifies the blocks that the item can be placed on.",
+  "type": "object",
+  "properties": {
+    "dispense_on": {
+      "title": "sequence container (class std::vector<struct Puv::v1_20_50::BlockDescriptor,class std::allocator<struct Puv::v1_20_50::BlockDescriptor> >)",
+      "description": "List of block descriptors of the blocks that this item can be dispensed on. If left empty, all blocks will be allowed.",
+      "type": "array",
+      "items": {
+        "$ref": "../../../../common/block/block_descriptor.json"
+      }
+    },
+    "entity": {
+      "description": "The entity to be placed in the world.",
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 18446744073709551615,
+      "pattern": "^(?:\\w+(?:\\.\\w+)*:(?=\\w))?(?:\\w+(?:\\.\\w+)*)(?:<((?:\\w+(?:\\.\\w+)*:(?=\\w))?\\w+(?:\\.\\w+)*)*>)?$"
+    },
+    "use_on": {
+      "title": "sequence container (class std::vector<struct Puv::v1_20_50::BlockDescriptor,class std::allocator<struct Puv::v1_20_50::BlockDescriptor> >)",
+      "description": "List of block descriptors of the blocks that this item can be used on. If left empty, all blocks will be allowed.",
+      "type": "array",
+      "items": {
+        "$ref": "../../../../common/block/block_descriptor.json"
+      }
+    }
+  },
+  "$comment": "version:1.16.100|[1.17.0,*);experiment:1.16.100|[1.17.0,1.20.0)"
+}

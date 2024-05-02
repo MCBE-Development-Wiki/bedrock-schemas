@@ -12,7 +12,6 @@
       "$ref": "../../common/semver/format_version.json"
     }
   },
-  "additionalProperties": false,
   "required": [
     "format_version",
     "minecraft:block"

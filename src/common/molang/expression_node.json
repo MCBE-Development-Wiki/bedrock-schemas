@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "bedrock_schemas.common.molang.expression_node",
+  "title": "struct Puv::Legacy::ExpressionNode",
+  "oneOf": [
+    {
+      "type": "string",
+      "format": "molang"
+    },
+    {
+      "type": "number"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "expression": {
+          "type": "string",
+          "format": "molang"
+        },
+        "version": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "expression",
+        "version"
+      ]
+    }
+  ]
+}

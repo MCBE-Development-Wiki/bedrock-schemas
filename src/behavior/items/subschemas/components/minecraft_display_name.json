@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "bedrock_schemas.behavior.items.minecraft:display_name",
+  "title": "minecraft:display_name",
+  "description": "The display_name item component specifies the text shown whenever an item's name is displayed, like in hover text.",
+  "type": "object",
+  "properties": {
+    "value": {
+      "description": "Name shown for an item.",
+      "type": "string"
+    }
+  },
+  "$comment": "version:1.16.100|[1.17.0,*);experiment:1.16.100|[1.17.0,1.20.0)"
+}
