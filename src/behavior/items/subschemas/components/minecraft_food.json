@@ -19,7 +19,8 @@
           "description": "saturation_modifier is used in this formula: (nutrition * saturation_modifier * 2) when applying the saturation buff. Default is set to 0.6.",
           "type": "number",
           "minimum": 0.0,
-          "$comment": "version:[1.18.0,*)"
+          "default": 0.6,
+          "$comment": "version:[1.10.0,1.16.100)|(1.16.100,1.17.0)|[1.18.0,*)"
         },
         {
           "type": "string",
@@ -39,6 +40,63 @@
     "using_converts_to": {
       "description": "When used, converts to the item specified by the string in this field. Default does not convert item.",
       "$ref": "../../../../common/item/item_descriptor.json"
+    },
+    "on_use_action": {
+      "type": "string",
+      "enum": [
+        "chorus_teleport",
+        "suspicious_stew_effect"
+      ],
+      "$comment": "version:[1.10.0,1.16.100)|(1.16.100,1.17.0)"
+    },
+    "on_use_range": {
+      "type": "array",
+      "minLength": 3,
+      "maxLength": 3,
+      "items": {
+        "type": "number"
+      },
+      "$comment": "version:[1.10.0,1.16.100)|(1.16.100,1.17.0)"
+    },
+    "cooldown_type": {
+      "type": "string",
+      "$comment": "version:[1.10.0,1.16.100)|(1.16.100,1.17.0)"
+    },
+    "cooldown_time": {
+      "type": "integer",
+      "default": 0,
+      "$comment": "version:[1.10.0,1.16.100)|(1.16.100,1.17.0)"
+    },
+    "effects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "duration": {
+            "type": "integer",
+            "default": 1
+          },
+          "amplifier": {
+            "type": "integer",
+            "default": 1
+          },
+          "chance": {
+            "type": "number",
+            "default": 1.0
+          }
+        }
+      },
+      "$comment": "version:[1.10.0,1.16.100)|(1.16.100,1.17.0)"
+    },
+    "remove_effects": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "$comment": "version:[1.10.0,1.16.100)|(1.16.100,1.17.0)"
     },
     "on_consume": {
       "description": "Event trigger for when the item is consumed.",
