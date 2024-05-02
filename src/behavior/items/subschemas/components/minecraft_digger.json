@@ -10,7 +10,22 @@
       "description": "A list of blocks to dig with correlating speeds of digging.",
       "type": "array",
       "items": {
-        "$ref": "#/$defs/3421086714"
+        "title": "struct Puv::v1_20_50::DiggerItemComponent::BlockInfo",
+        "type": "object",
+        "properties": {
+          "block": {
+            "description": "Block to be dug.",
+            "$ref": "../../../../common/block/block_descriptor.json"
+          },
+          "speed": {
+            "description": "Digging speed for the correlating block(s).",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "block",
+          "speed"
+        ]
       }
     },
     "use_efficiency": {
@@ -21,26 +36,6 @@
       "description": "Event trigger for when the item is consumed.",
       "$ref": "../../../../common/item/definition_trigger.json",
       "$comment": "version:1.16.100|[1.17.0,1.20.30);deprecated:[1.20.30,*)"
-    }
-  },
-  "$defs": {
-    "3421086714": {
-      "title": "struct Puv::v1_20_50::DiggerItemComponent::BlockInfo",
-      "type": "object",
-      "properties": {
-        "block": {
-          "description": "Block to be dug.",
-          "$ref": "../../../../common/block/block_descriptor.json"
-        },
-        "speed": {
-          "description": "Digging speed for the correlating block(s).",
-          "type": "integer"
-        }
-      },
-      "required": [
-        "block",
-        "speed"
-      ]
     }
   },
   "$comment": "version:1.16.100|[1.17.0,*);experiment:1.16.100|[1.17.0,1.20.20)"

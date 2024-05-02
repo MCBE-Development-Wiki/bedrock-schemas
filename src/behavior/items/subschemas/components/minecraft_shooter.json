@@ -10,7 +10,29 @@
       "description": "Ammunition.",
       "type": "array",
       "items": {
-        "$ref": "#/$defs/2221989686"
+        "title": "struct Puv::v1_20_50::ShooterItemComponent::Ammunition",
+        "type": "object",
+        "properties": {
+          "item": {
+            "description": "Ammunition item description identifier.",
+            "$ref": "../../../../common/item/item_descriptor.json"
+          },
+          "search_inventory": {
+            "description": "Can search inventory? Default is set to false.",
+            "type": "boolean"
+          },
+          "use_in_creative": {
+            "description": "Can use in creative mode? Default is set to false.",
+            "type": "boolean"
+          },
+          "use_offhand": {
+            "description": "Can use off-hand? Default is set to false.",
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "item"
+        ]
       }
     },
     "charge_on_draw": {
@@ -24,33 +46,6 @@
     "scale_power_by_draw_duration": {
       "description": "Scale power by draw duration? Default is set to false.",
       "type": "boolean"
-    }
-  },
-  "$defs": {
-    "2221989686": {
-      "title": "struct Puv::v1_20_50::ShooterItemComponent::Ammunition",
-      "type": "object",
-      "properties": {
-        "item": {
-          "description": "Ammunition item description identifier.",
-          "$ref": "../../../../common/item/item_descriptor.json"
-        },
-        "search_inventory": {
-          "description": "Can search inventory? Default is set to false.",
-          "type": "boolean"
-        },
-        "use_in_creative": {
-          "description": "Can use in creative mode? Default is set to false.",
-          "type": "boolean"
-        },
-        "use_offhand": {
-          "description": "Can use off-hand? Default is set to false.",
-          "type": "boolean"
-        }
-      },
-      "required": [
-        "item"
-      ]
     }
   },
   "$comment": "version:1.16.100|[1.17.0,*);experiment:1.16.100|[1.17.0,1.20.10)"
