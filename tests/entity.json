@@ -1,0 +1,19 @@
+{
+    "$schema": "../src/behavior/entities/entity.json",
+    "format_version": "1.17.20",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "example:example_entity",
+            "is_spawnable": true,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "components": {
+            "minecraft:attack": {
+                "damage": [1, 2],
+                "effect_duration": 0.0,
+                "effect_name": "absorption"
+            }
+        }
+    }
+}

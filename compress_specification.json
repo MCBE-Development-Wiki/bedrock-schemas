@@ -2,6 +2,7 @@
   "$schema": "assets/compression-schema.json",
   "Files": [
     { "Source": "./src/behavior/items/item.json", "Destination": "./schemas/behavior/items/item.json" },
-    { "Source": "./src/behavior/blocks/block.json", "Destination": "./schemas/behavior/blocks/block.json" }
+    { "Source": "./src/behavior/blocks/block.json", "Destination": "./schemas/behavior/blocks/block.json" },
+    { "Source": "./src/behavior/entities/entity.json", "Destination": "./schemas/behavior/entities/entity.json" }
   ]
 }
