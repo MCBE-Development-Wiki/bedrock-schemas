@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "bedrock_schemas.common.definition.definition_trigger_no_condition",
+  "oneOf": [
+    {
+      "type": "string"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "event": {
+          "type": "string"
+        },
+        "target": {
+          "type": "string",
+          "enum": [
+            "self",
+            "other",
+            "player",
+            "target",
+            "parent",
+            "baby",
+            "block",
+            "damager",
+            "holder",
+            "item"
+          ],
+          "default": "self"
+        }
+      }
+    }
+  ]
+}

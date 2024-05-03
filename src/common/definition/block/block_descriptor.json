@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "bedrock_schemas.common.block.block_descriptor",
+  "$id": "bedrock_schemas.common.definition.block.block_descriptor",
   "title": "struct Puv::v1_20_50::BlockDescriptor",
   "oneOf": [
     {
@@ -27,7 +27,7 @@
           }
         },
         "tags": {
-          "$ref": "../molang/expression_node_string.json"
+          "$ref": "../../molang/expression_node_string.json"
         }
       }
     },

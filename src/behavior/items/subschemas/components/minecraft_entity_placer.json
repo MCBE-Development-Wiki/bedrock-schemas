@@ -10,7 +10,7 @@
       "description": "List of block descriptors of the blocks that this item can be dispensed on. If left empty, all blocks will be allowed.",
       "type": "array",
       "items": {
-        "$ref": "../../../../common/block/block_descriptor.json"
+        "$ref": "../../../../common/definition/block/block_descriptor.json"
       }
     },
     "entity": {
@@ -25,7 +25,7 @@
       "description": "List of block descriptors of the blocks that this item can be used on. If left empty, all blocks will be allowed.",
       "type": "array",
       "items": {
-        "$ref": "../../../../common/block/block_descriptor.json"
+        "$ref": "../../../../common/definition/block/block_descriptor.json"
       }
     }
   },

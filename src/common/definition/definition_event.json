@@ -1,0 +1,27 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "bedrock_schemas.common.definition.definition_event",
+  "properties": {
+    "weight": {
+      "type": "number"
+    },
+    "condition": {
+      "$ref": "../molang/expression_node_no_version.json"
+    },
+    "randomize": {
+      "type": "array",
+      "items": {
+        "$ref": "#"
+      }
+    },
+    "sequence": {
+      "type": "array",
+      "items": {
+        "$ref": "#"
+      }
+    },
+    "trigger": {
+      "$ref": "./definition_trigger_no_condition.json"
+    }
+  }
+}

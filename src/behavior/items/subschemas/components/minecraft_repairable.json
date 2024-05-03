@@ -22,7 +22,7 @@
           "title": "sequence container (class std::vector<struct Puv::Legacy::ItemDescriptor,class std::allocator<struct Puv::Legacy::ItemDescriptor> >)",
           "type": "array",
           "items": {
-            "$ref": "../../../../common/item/item_descriptor.json"
+            "$ref": "../../../../common/definition/item/item_descriptor.json"
           }
         },
         {
@@ -33,7 +33,7 @@
               "description": "Items that may be used to repair an item.",
               "type": "array",
               "items": {
-                "$ref": "../../../../common/item/item_descriptor.json"
+                "$ref": "../../../../common/definition/item/item_descriptor.json"
               }
             },
             "repair_amount": {

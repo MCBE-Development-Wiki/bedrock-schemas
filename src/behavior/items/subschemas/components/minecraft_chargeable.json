@@ -6,7 +6,7 @@
   "properties": {
     "on_complete": {
       "description": "Event trigger for when the item has completed its use duration.",
-      "$ref": "../../../../common/item/definition_trigger.json"
+      "$ref": "../../../../common/definition/definition_trigger.json"
     },
     "movement_modifier": {
       "description": "Modifier value to scale the players movement speed when item is in use.",

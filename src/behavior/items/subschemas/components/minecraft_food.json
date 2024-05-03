@@ -39,7 +39,7 @@
     },
     "using_converts_to": {
       "description": "When used, converts to the item specified by the string in this field. Default does not convert item.",
-      "$ref": "../../../../common/item/item_descriptor.json"
+      "$ref": "../../../../common/definition/item/item_descriptor.json"
     },
     "on_use_action": {
       "type": "string",
@@ -100,7 +100,7 @@
     },
     "on_consume": {
       "description": "Event trigger for when the item is consumed.",
-      "$ref": "../../../../common/item/definition_trigger.json",
+      "$ref": "../../../../common/definition/definition_trigger.json",
       "$comment": "version:1.16.100|[1.17.0,1.20.30);deprecated:[1.20.30,*)"
     }
   }

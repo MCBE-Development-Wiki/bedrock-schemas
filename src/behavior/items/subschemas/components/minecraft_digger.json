@@ -19,7 +19,7 @@
     },
     "on_consume": {
       "description": "Event trigger for when the item is consumed.",
-      "$ref": "../../../../common/item/definition_trigger.json",
+      "$ref": "../../../../common/definition/definition_trigger.json",
       "$comment": "version:1.16.100|[1.17.0,1.20.30);deprecated:[1.20.30,*)"
     }
   },
@@ -30,7 +30,7 @@
       "properties": {
         "block": {
           "description": "Block to be dug.",
-          "$ref": "../../../../common/block/block_descriptor.json"
+          "$ref": "../../../../common/definition/block/block_descriptor.json"
         },
         "speed": {
           "description": "Digging speed for the correlating block(s).",

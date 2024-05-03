@@ -33,7 +33,7 @@
       "properties": {
         "item": {
           "description": "Ammunition item description identifier.",
-          "$ref": "../../../../common/item/item_descriptor.json"
+          "$ref": "../../../../common/definition/item/item_descriptor.json"
         },
         "search_inventory": {
           "description": "Can search inventory? Default is set to false.",
