@@ -11,13 +11,13 @@
     "randomize": {
       "type": "array",
       "items": {
-        "$ref": "#"
+        "$ref": "./definition_event.json"
       }
     },
     "sequence": {
       "type": "array",
       "items": {
-        "$ref": "#"
+        "$ref": "./definition_event.json"
       }
     },
     "trigger": {
