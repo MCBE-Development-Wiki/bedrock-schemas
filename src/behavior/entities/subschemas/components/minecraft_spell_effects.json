@@ -1,0 +1,100 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "bedrock_schemas.behavior.entities.minecraft:spell_effects",
+    "title": "minecraft:spell_effects",
+    "description": "Defines what mob effects to add and remove to the entity when adding this component.",
+    "type": "object",
+    "properties": {
+        "add_effects": {
+            "type": "array",
+            "description": "List of effects to add to this entity after adding this component.",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "effect": {
+                        "type": "string",
+                        "enum": [
+                            "absorption",
+                            "bad_omen",
+                            "blindness",
+                            "conduit_power",
+                            "fatal_poison",
+                            "fire_resistance",
+                            "haste",
+                            "health_boost",
+                            "village_hero",
+                            "hunger",
+                            "instant_damage",
+                            "instant_health",
+                            "invisibility",
+                            "jump_boost",
+                            "levitation",
+                            "nausea",
+                            "night_vision",
+                            "poison",
+                            "regeneration",
+                            "resistance",
+                            "saturation",
+                            "slow_falling",
+                            "slowness",
+                            "speed",
+                            "strength",
+                            "water_breathing",
+                            "weakness",
+                            "wither"
+                        ]
+                    },
+                    "duration": {
+                        "type": "integer"
+                    },
+                    "amplifier": {
+                        "type": "integer"
+                    },
+                    "ambient": {
+                        "type": "boolean"
+                    },
+                    "visible": {
+                        "type": "boolean"
+                    },
+                    "display_on_screen_animation": {
+                        "type": "boolean"
+                    }
+                }
+            }
+        },
+        "remove_effects": {
+            "type": "string",
+            "description": "List of identifiers of effects to be removed from this entity after adding this component.",
+            "enum": [
+                "absorption",
+                "bad_omen",
+                "blindness",
+                "conduit_power",
+                "fatal_poison",
+                "fire_resistance",
+                "haste",
+                "health_boost",
+                "village_hero",
+                "hunger",
+                "instant_damage",
+                "instant_health",
+                "invisibility",
+                "jump_boost",
+                "levitation",
+                "nausea",
+                "night_vision",
+                "poison",
+                "regeneration",
+                "resistance",
+                "saturation",
+                "slow_falling",
+                "slowness",
+                "speed",
+                "strength",
+                "water_breathing",
+                "weakness",
+                "wither"
+            ]
+        }
+    }
+}

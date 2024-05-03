@@ -37,6 +37,22 @@
             "properties": {
                 "minecraft:attack": {
                     "$ref": "./components/minecraft_attack.json"
+                },
+                "minecraft:spell_effects": {
+                    "$ref": "./components/minecraft_spell_effects.json"
+                },
+                "minecraft:strength": {
+                    "$ref": "./components/minecraft_strength.json"
+                },
+                "minecraft:addrider": {
+                    "$ref": "./components/minecraft_addrider.json"
+                },
+                "minecraft:admire_item": {
+                    "$ref": "./components/minecraft_admire_item.json",
+                    "$comment": "version:[1.16.0,*)"
+                },
+                "minecraft:ageable": {
+                    "$ref": "./components/minecraft_ageable.json"
                 }
             },
             "patternProperties": {},

@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "bedrock_schemas.common.entity.entity_filters",
+    "type": "object",
+    "properties": {
+        "any_of": {
+            "$ref": "./sub_filter.json"
+        },
+        "all_of": {
+            "$ref": "./sub_filter.json"
+        },
+        "none_of": {
+            "$ref": "./sub_filter.json"
+        }
+    }
+}

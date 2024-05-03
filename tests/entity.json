@@ -1,6 +1,6 @@
 {
     "$schema": "../src/behavior/entities/entity.json",
-    "format_version": "1.17.20",
+    "format_version": "1.20.80",
     "minecraft:entity": {
         "description": {
             "identifier": "example:example_entity",
@@ -13,6 +13,56 @@
                 "damage": [1, 2],
                 "effect_duration": 0.0,
                 "effect_name": "absorption"
+            },
+            "minecraft:spell_effects": {
+                "add_effects": [
+                    {
+                        "effect": "absorption",
+                        "visible": false,
+                        "ambient": true,
+                        "amplifier": 1,
+                        "display_on_screen_animation": true
+                    }
+                ],
+                "remove_effects": "absorption"
+            },
+            "minecraft:strength": {
+                "max": 5,
+                "value": 1
+            },
+            "minecraft:addrider": {
+                "entity_type": "minecraft:zombie",
+                "spawn_event": "minecraft:entity_spawned"
+            },
+            "minecraft:admire_item": {
+                "cooldown_after_being_attacked": 0,
+                "duration": 10
+            },
+            "minecraft:ageable": {
+                "duration": 1200.0,
+                "interact_filters": {
+                    "all_of": [
+                        {
+                            "operator": "!=",
+                            "test": "is_family",
+                            "value": "player"
+                        }
+                    ],
+                    "none_of": {
+                        "operator": "!=",
+                        "test": "is_family",
+                        "value": "player"
+                    }
+                },
+                "grow_up": {
+                    "event": "grow_up",
+                    "target": "self"
+                },
+                "feed_items": ["carrot", {
+                    "item": "wheat",
+                    "growth": 0.25
+                }],
+                "drop_items": ["stick:1"]
             }
         }
     }
