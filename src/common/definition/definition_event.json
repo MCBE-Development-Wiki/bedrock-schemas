@@ -1,27 +1,32 @@
 ﻿{
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "bedrock_schemas.common.definition.definition_event",
-  "properties": {
-    "weight": {
-      "type": "number"
-    },
-    "condition": {
-      "$ref": "../molang/expression_node_no_version.json"
-    },
-    "randomize": {
-      "type": "array",
-      "items": {
-        "$ref": "./definition_event.json"
+  "definitions": {
+    "definition_event": {
+      "type": "object",
+      "properties": {
+        "weight": {
+          "type": "number"
+        },
+        "condition": {
+          "$ref": "../molang/expression_node_no_version.json"
+        },
+        "randomize": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/definition_event"
+          }
+        },
+        "sequence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/definition_event"
+          }
+        },
+        "trigger": {
+          "$ref": "./definition_trigger_no_condition.json"
+        }
       }
-    },
-    "sequence": {
-      "type": "array",
-      "items": {
-        "$ref": "./definition_event.json"
-      }
-    },
-    "trigger": {
-      "$ref": "./definition_trigger_no_condition.json"
     }
   }
 }
