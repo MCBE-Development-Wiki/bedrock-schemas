@@ -63,7 +63,58 @@
                     "growth": 0.25
                 }],
                 "drop_items": ["stick:1"]
-            }
+            },
+            "minecraft:anger_level": {
+                "anger_decrement_interval": 1.0,
+                "angry_boost": 20,
+                "angry_threshold": 80,
+                "default_annoyingness": 1,
+                "default_projectile_annoyingness": 1,
+                "nuisance_filter": {
+                    "all_of": {
+                        "operator": "!="
+                    }
+                },
+                "max_anger": 100,
+                "on_increase_sounds": [
+                    {
+                        "sound": "a",
+                        "condition": "q.something"
+                    }
+                ],
+                "remove_targets_below_angry_threshold": true
+            },
+            "minecraft:angry": {
+                "broadcast_anger": false,
+                "broadcast_anger_on_being_attacked": false,
+                "angry_sound": "a",
+                "sound_interval": [1, 1],
+                "broadcast_range": 20,
+                "filters": {
+                    "all_of": [
+                        {
+                            "operator": "!="
+                        }
+                    ]
+                },
+                "broadcast_filters": {
+                    "all_of": [
+                        {
+                            "operator": "!="
+                        }
+                    ]
+                },
+                "broadcast_targets": ["minecraft:zombie"],
+                "broadcast_anger_on_attack": false,
+                "calm_event": {
+                    "event": "calm",
+                    "target": "self"
+                }
+            },
+            "minecraft:area_attack": {
+
+            },
+            "minecraft:block_climber": {}
         }
     }
 }

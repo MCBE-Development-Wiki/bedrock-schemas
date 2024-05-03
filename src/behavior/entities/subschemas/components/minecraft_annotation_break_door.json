@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "bedrock_schemas.behavior.entities.minecraft:annotation.break_door",
+    "title": "minecraft:annotation.break_door",
+    "description": "Allows the actor to break doors assuming that that flags set up for the component to use in navigation.",
+    "type": "object",
+    "properties": {
+        "break_time": {
+            "type": "number",
+            "description": "The time in seconds required to break through doors.",
+            "default": 12.0
+        },
+        "min_difficulty": {
+            "type": "string",
+            "enum": [
+                "peaceful",
+                "easy",
+                "normal",
+                "hard"
+            ],
+            "description": "The minimum difficulty that the world must be on for this entity to break doors."
+        }
+    }
+}

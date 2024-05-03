@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "bedrock_schemas.behavior.items.netease:fire_resistant",
+    "description": "设置物品是否防火，防火的物品会与下界合金一样，不会被火烧毁，掉进岩浆时会弹走.",
+    "type": "object",
+    "properties": {
+        "value": {
+            "description": "是否防火",
+            "type": "boolean"
+        }
+    },
+    "$comment": "edition:china;version:1.10"
+}

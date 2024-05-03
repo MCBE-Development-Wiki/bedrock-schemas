@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "bedrock_schemas.behavior.entities.minecraft:attack_cooldown",
+    "title": "minecraft:attack_cooldown",
+    "description": "Adds a cooldown to a mob. The intention of this cooldown is to be used to prevent the mob from attempting to aquire new attack targets.",
+    "type": "object",
+    "properties": {
+        "attack_cooldown_complete_event": {
+            "$ref": "../../../../common/definition/definition_trigger_no_condition.json",
+            "description": "Event to be runned when the cooldown is complete."
+        },
+        "attack_cooldown_time": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+                "type": "number",
+                "default": [0.0, 1.0]
+            }
+        }
+    }
+}

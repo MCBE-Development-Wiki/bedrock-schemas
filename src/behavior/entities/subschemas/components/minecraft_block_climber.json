@@ -1,0 +1,7 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "bedrock_schemas.behavior.entities.minecraft:block_climber",
+    "title": "minecraft:block_climber",
+    "description": "Allows the player to detect and maneuver on the scaffolding block.",
+    "type": "object"
+}

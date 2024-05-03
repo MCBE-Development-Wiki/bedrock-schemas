@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "bedrock_schemas.behavior.items.netease:customtips",
+    "description": "定义物品描述信息。",
+    "type": "object",
+    "properties": {
+        "value": {
+            "description": "物品的描述信息",
+            "type": "string"
+        }
+    },
+    "$comment": "edition:china;version:1.10"
+}

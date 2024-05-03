@@ -45,6 +45,7 @@
             "$comment": "version:[1.17.0,*)"
         },
         "interact_filters": {
+            "description": "List of conditions to meet so that the entity can be fed.",
             "$ref": "../../../../common/definition/entity/entity_filters.json",
             "$comment": "version:[1.20.60,*)"
         },

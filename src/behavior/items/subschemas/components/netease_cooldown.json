@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "bedrock_schemas.behavior.items.netease:cooldown",
+    "description": "定义物品描述信息。",
+    "type": "object",
+    "properties": {
+        "duration": {
+            "type": "integer",
+            "default": 0,
+            "description": "可填，这个物品能够再次使用前的冷却时间。"
+        },
+        "category": {
+            "type": "string",
+            "description": "可填，物品的冷却类型。"
+        }
+    },
+    "$comment": "edition:china;version:1.10"
+}

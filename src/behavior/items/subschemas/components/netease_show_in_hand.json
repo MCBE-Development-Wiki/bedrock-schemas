@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "bedrock_schemas.behavior.items.netease:show_in_hand",
+    "description": "设置物品拿在手上时是否显示.",
+    "type": "object",
+    "properties": {
+        "value": {
+            "description": "手持时是否显示",
+            "type": "boolean"
+        }
+    },
+    "$comment": "edition:china;version:1.10"
+}

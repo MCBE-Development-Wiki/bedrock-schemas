@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "bedrock_schemas.behavior.entities.minecraft:barter",
+    "title": "minecraft:barter",
+    "description": "Enables the component to drop an item as a barter exchange.",
+    "type": "object",
+    "properties": {
+        "barter_table": {
+            "type": "string",
+            "description": "Loot table that's used to drop a random item."
+        },
+        "cooldown_after_being_attacked": {
+            "type": "integer",
+            "default": 0,
+            "description": "Duration, in seconds, for which mob won't barter items if it was hurt."
+        }
+    }
+}

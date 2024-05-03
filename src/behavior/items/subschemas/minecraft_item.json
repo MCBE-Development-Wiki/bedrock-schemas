@@ -50,6 +50,24 @@
             }
           },
           "$comment": "version:[1.20.20,*)"
+        },
+        "custom_item_type": {
+          "type": "string",
+          "description": "我的世界中国版自定义物品类别，请勿在国际版上使用。",
+          "enum": [
+            "weapon",
+            "armor",
+            "egg",
+            "ranged_weapon",
+            "projectile_item"
+          ],
+          "$comment": "version:1.10"
+        },
+        "register_to_create_menu": {
+          "type": "boolean",
+          "description": "是否注册到创造栏。我的世界中国版自定义物品注册属性，请勿在国际版上使用。",
+          "default": false,
+          "$comment": "version:1.10"
         }
       }
     },
@@ -196,6 +214,27 @@
         },
         "minecraft:tags": {
           "$ref": "./components/minecraft_tags.json"
+        },
+        "netease:show_in_hand": {
+          "$ref": "./components/netease_show_in_hand.json"
+        },
+        "netease:fire_resistant": {
+          "$ref": "./components/netease_fire_resistant.json"
+        },
+        "netease:allow_offhand": {
+          "$ref": "./components/netease_allow_offhand.json"
+        },
+        "netease:enchant_material": {
+          "$ref": "./components/netease_enchant_material.json"
+        },
+        "netease:fuel": {
+          "$ref": "./components/netease_fuel.json"
+        },
+        "netease:cooldown": {
+          "$ref": "./components/netease_cooldown.json"
+        },
+        "netease:customtips": {
+          "$ref": "./components/netease_customtips.json"
         }
       },
       "patternProperties": {

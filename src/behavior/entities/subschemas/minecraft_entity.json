@@ -53,6 +53,30 @@
                 },
                 "minecraft:ageable": {
                     "$ref": "./components/minecraft_ageable.json"
+                },
+                "minecraft:anger_level": {
+                    "$ref": "./components/minecraft_anger_level.json"
+                },
+                "minecraft:angry": {
+                    "$ref": "./components/minecraft_angry.json"
+                },
+                "minecraft:annotation.break_door": {
+                    "$ref": "./components/minecraft_annotation_break_door.json"
+                },
+                "minecraft:annotation.open_door": {
+                    "$ref": "./components/minecraft_annotation_open_door.json"
+                },
+                "minecraft:area_attack": {
+                    "$ref": "./components/minecraft_area_attack.json"
+                },
+                "minecraft:attack_cooldown": {
+                    "$ref": "./components/minecraft_attack_cooldown.json"
+                },
+                "minecraft:barter": {
+                    "$ref": "./components/minecraft_barter.json"
+                },
+                "minecraft:block_climber": {
+                    "$ref": "./components/minecraft_block_climber.json"
                 }
             },
             "patternProperties": {},

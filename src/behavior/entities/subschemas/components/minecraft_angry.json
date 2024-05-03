@@ -1,0 +1,80 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "bedrock_schemas.behavior.entities.minecraft:angry",
+    "title": "minecraft:angry",
+    "description": "Defines the entity's 'angry' state using a timer.",
+    "type": "object",
+    "properties": {
+        "angry_sound": {
+            "type": "string",
+            "description": "The sound event to play when the mob is angry."
+        },
+        "broadcast_anger": {
+            "type": "boolean",
+            "default": false,
+            "description": "If true, other entities of the same entity definition within the broadcastRange will also become angry."
+        },
+        "broadcast_anger_on_attack": {
+            "type": "boolean",
+            "default": false,
+            "description": "If true, other entities of the same entity definition within the broadcastRange will also become angry whenever this mob attacks."
+        },
+        "broadcast_anger_on_being_attacked": {
+            "type": "boolean",
+            "default": false,
+            "description": "If true, other entities of the same entity definition within the broadcastRange will also become angry whenever this mob is attacked."
+        },
+        "broadcast_filters": {
+            "$ref": "../../../../common/definition/entity/entity_filters.json",
+            "description": "Conditions that make this entry in the list valid."
+        },
+        "broadcast_range": {
+            "type": "integer",
+            "default": 20,
+            "description": "Distance in blocks within which other entities of the same entity definition will become angry."
+        },
+        "broadcast_targets": {
+            "type": "array",
+            "description": "A list of entity families to broadcast anger to.",
+            "items": {
+                "type": "string"
+            }
+        },
+        "calm_event": {
+            "type": "object",
+            "description": "Event to run after the number of seconds specified in duration expires (when the entity stops being 'angry').",
+            "properties": {
+                "event": {
+                    "type": "string"
+                },
+                "target": {
+                    "type": "string"
+                }
+            }
+        },
+        "duration": {
+            "type": "integer",
+            "default": 25,
+            "description": "The amount of time in seconds that the entity will be angry."
+        },
+        "duration_delta": {
+            "type": "integer",
+            "default": 0,
+            "description": "Variance in seconds added to the duration [-delta, delta]."
+        },
+        "filters": {
+            "$ref": "../../../../common/definition/entity/entity_filters.json",
+            "description": "Filter out mob types that it should not attack while angry (other Piglins)."
+        },
+        "sound_interval": {
+            "type": "array",
+            "description": "The range of time in seconds to randomly wait before playing the sound again.",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+                "type": "integer",
+                "default": 0
+            }
+        }
+    }
+}

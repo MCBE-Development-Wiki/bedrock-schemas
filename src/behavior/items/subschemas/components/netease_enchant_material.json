@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "bedrock_schemas.behavior.items.netease:enchant_material",
+    "description": "设置物品是否可以当附魔材料。",
+    "type": "object",
+    "properties": {
+        "value": {
+            "description": "是否可以当附魔材料",
+            "type": "boolean",
+            "default": false
+        }
+    },
+    "$comment": "edition:china;version:1.10"
+}
