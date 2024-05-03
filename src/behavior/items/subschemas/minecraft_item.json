@@ -209,6 +209,20 @@
         }
       },
       "required": []
+    },
+    "events": {
+      "type": "object",
+      "properties": {
+        "on_fertilized": {
+          "not": {}
+        },
+        "on_tool_used": {
+          "$ref": "../../../common/definition/definition_event.json"
+        }
+      },
+      "additionalProperties": {
+        "$ref": "../../../common/definition/definition_event.json"
+      }
     }
   },
   "additionalProperties": false,
