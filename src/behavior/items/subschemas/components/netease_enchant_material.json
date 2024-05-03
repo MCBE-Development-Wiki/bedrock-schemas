@@ -10,5 +10,5 @@
             "default": false
         }
     },
-    "$comment": "edition:china;version:1.10"
+    "$comment": "edition:china;version:[1.10,1.16.100)|(1.16.100,1.17.0)"
 }

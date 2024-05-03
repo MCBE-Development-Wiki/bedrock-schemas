@@ -61,13 +61,13 @@
             "ranged_weapon",
             "projectile_item"
           ],
-          "$comment": "version:1.10"
+          "$comment": "edition:china;version:[1.10,1.16.100)|(1.16.100,1.17.0)"
         },
         "register_to_create_menu": {
           "type": "boolean",
           "description": "是否注册到创造栏。我的世界中国版自定义物品注册属性，请勿在国际版上使用。",
           "default": false,
-          "$comment": "version:1.10"
+          "$comment": "edition:china;version:[1.10,1.16.100)|(1.16.100,1.17.0)"
         }
       }
     },
