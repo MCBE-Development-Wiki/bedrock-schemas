@@ -1,5 +1,5 @@
 {
-  "$schema": "../schemas/behavior/items/item.json",
+  "$schema": "../src/behavior/items/item.json",
   "format_version": "1.16.100",
   "minecraft:item": {
     "description": {
@@ -13,6 +13,19 @@
             "items": [
               "minecraft:stone"
             ]
+          }
+        ]
+      },
+      "minecraft:digger": {
+        "destroy_speeds": [
+          {
+            "block": {
+              "name": "minecraft:stone",
+              "states": {
+                "variant": "stone"
+              }
+            },
+            "speed": 1
           }
         ]
       }

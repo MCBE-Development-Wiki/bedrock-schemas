@@ -4,6 +4,15 @@
   "title": "struct Puv::v1_20_50::BlockDescriptor",
   "oneOf": [
     {
+      "$ref": "#/definitions/2836600109"
+    },
+    {
+      "type": "string",
+      "minLength": 1
+    }
+  ],
+  "definitions": {
+    "2836600109": {
       "title": "struct Puv::v1_20_50::BlockDescriptorSerializer::BlockDescriptorProxy",
       "type": "object",
       "properties": {
@@ -14,15 +23,7 @@
           "title": "associative container (class std::map<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct Puv::v1_20_50::BlockDescriptor::Compound,struct std::less<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const ,struct Puv::v1_20_50::BlockDescriptor::Compound> > >)",
           "type": "object",
           "additionalProperties": {
-            "title": "compound_proxy",
-            "oneOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "integer"
-              }
-            ]
+            "$ref": "#/definitions/1290538044"
           }
         },
         "tags": {
@@ -30,9 +31,16 @@
         }
       }
     },
-    {
-      "type": "string",
-      "minLength": 1
+    "1290538044": {
+      "title": "compound_proxy",
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "integer"
+        }
+      ]
     }
-  ]
+  }
 }
