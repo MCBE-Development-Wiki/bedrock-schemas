@@ -1,0 +1,71 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "bedrock_schemas.behavior.entities.entity",
+    "type": "object",
+    "title": "`minecraft:entity` Object",
+    "description": "The main area to define an entity.",
+    "properties": {
+        "description": {
+            "type": "object",
+            "title": "Entity Description",
+            "description": "The entity description.",
+            "properties": {
+                "identifier": {
+                    "type": "string",
+                    "title": "Entity Identifier",
+                    "description": "The entity identifier."
+                },
+                "is_spawnable": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Specifies whether the entity can be spawned using the spawn egg."
+                },
+                "is_summonable": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Specifies whether the entity can be spawned using the summon command."
+                },
+                "is_experimental": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Specifies whether the experimental gameplay needs to be turned on in order to spawn the entity."
+                }
+            }
+        },
+        "components": {
+            "type": "object",
+            "properties": {
+                "minecraft:attack": {
+                    "$ref": "./components/minecraft_attack.json"
+                }
+            },
+            "patternProperties": {},
+            "required": []
+        },
+        "events": {
+            "type": "object",
+            "properties": {
+                "minecraft:entity_born": {
+                    "$ref": "../../../common/definition/definition_event.json"
+                },
+                "minecraft:entity_spawned": {
+                    "$ref": "../../../common/definition/definition_event.json"
+                },
+                "minecraft:entity_transformed": {
+                    "$ref": "../../../common/definition/definition_event.json"
+                },
+                "minecraft:on_prime": {
+                    "$ref": "../../../common/definition/definition_event.json"
+                }
+            },
+            "additionalProperties": {
+                "$ref": "../../../common/definition/definition_event.json"
+            }
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "description",
+        "components"
+    ]
+}
