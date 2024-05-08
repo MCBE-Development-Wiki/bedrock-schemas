@@ -9,7 +9,7 @@
       "$ref": "../../common/semver/format_version.json"
     },
     "minecraft:block": {
-      "$ref": "../../common/semver/format_version.json"
+      "$ref": "./subschemas/minecraft_block.json"
     }
   },
   "required": [

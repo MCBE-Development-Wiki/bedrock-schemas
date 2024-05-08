@@ -77,6 +77,18 @@
                 },
                 "minecraft:block_climber": {
                     "$ref": "./components/minecraft_block_climber.json"
+                },
+                "minecraft:block_sensor": {
+                    "$ref": "./components/minecraft_block_sensor.json"
+                },
+                "minecraft:boostable": {
+                    "$ref": "./components/minecraft_boostable.json"
+                },
+                "minecraft:boss": {
+                    "$ref": "./components/minecraft_boss.json"
+                },
+                "minecraft:break_blocks": {
+                    "$ref": "./components/minecraft_break_blocks.json"
                 }
             },
             "patternProperties": {},

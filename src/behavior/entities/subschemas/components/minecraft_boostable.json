@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "bedrock_schemas.behavior.entities.minecraft:boostable",
+    "title": "minecraft:boostable",
+    "description": "Defines the conditions and behavior of a rideable entity's boost.",
+    "type": "object",
+    "properties": {
+        "boost_items": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "damage": {
+                        "type": "integer",
+                        "default": 1,
+                        "description": "This is the damage that the item will take each time it is used."
+                    },
+                    "item": {
+                        "type": "string",
+                        "description": "Name of the item that can be used to boost."
+                    },
+                    "replace_item": {
+                        "type": "string",
+                        "description": "The item used to boost will become this item once it is used up."
+                    }
+                }
+            }
+        },
+        "duration": {
+            "type": "number",
+            "default": 3.00,
+            "description": "Time in seconds for the boost."
+        },
+        "speed_multiplier": {
+            "type": "number",
+            "default": 1.35,
+            "description": "Factor by which the entity's normal speed increases. E.g. 2.0 means go twice as fast. Requires \"format_version\" of 1.20 or more, otherwise the value 1.35 will be used.",
+            "$comment": "version:[1.20.0,*)"
+        }
+    }
+}
