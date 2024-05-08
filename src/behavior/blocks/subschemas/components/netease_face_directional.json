@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "bedrock_schemas.behavior.items.netease:face_directional",
+    "description": "用于设置方块的多面向。主要用于多面向的功能。",
+    "type": "object",
+    "properties": {
+        "type": {
+            "type": "string",
+            "description": "direction：四面向方块\nfacing_direction：六面向方块",
+            "enum": [
+                "direction",
+                "facing_direction"
+            ]
+        }
+    },
+    "required": [
+    ],
+    "$comment": "edition:china;version:[1.10,1.16.100)|(1.16.100,*)"
+}

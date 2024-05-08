@@ -27,13 +27,15 @@
         },
         "control_flags": {
             "description": "控制标志，包含相同控制标志的行为被为冲突，同一时刻下冲突的行为最多只有一个会被执行。可用的标志有move, look, jump。",
-            "type": "string",
-            "enum": [
-                "move",
-                "look",
-                "jump"
-            ],
-            "minimum": 1
+            "type": "array",
+            "items": {
+                "type": "string",
+                "enum": [
+                    "move",
+                    "look",
+                    "jump"
+                ]
+            }
         }
     },
     "required": [

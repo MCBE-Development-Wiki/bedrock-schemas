@@ -1,0 +1,31 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "bedrock_schemas.behavior.items.netease:tier",
+    "description": "可燃类物品组件。允许该物品作为燃料在熔炉中燃烧。",
+    "type": "object",
+    "properties": {
+        "digger": {
+            "type": "string",
+            "description": "必须设置。表示方块使用此工具挖掘时有速度加成。可选的值有：\nshovel：铲\npickaxe：镐\nhatchet：斧",
+            "enum": [
+                "shovel",
+                "pickaxe",
+                "hatchet"
+            ]
+        },
+        "destroy_special": {
+            "type": "boolean",
+            "default": false,
+            "description": "可选。\n当设置为true时，表示只有使用digger设置的工具进行挖掘才会产生掉落物。"
+        },
+        "level": {
+            "type": "integer",
+            "default": 0,
+            "description": "可选。\n当destroy_special为true时才会生效。表示挖掘所需的工具等级，若手持工具等级小于该值，则不会产生掉落物。\n原版工具的等级：\n空手/其他非工具物品：0\n木制/金制工具：0\n石制工具：1\n铁制工具：2\n钻石工具：3"
+        }
+    },
+    "required": [
+        "digger"
+    ],
+    "$comment": "edition:china;version:[1.10,1.16.100)|(1.16.100,*)"
+}

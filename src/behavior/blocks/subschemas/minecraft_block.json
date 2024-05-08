@@ -55,6 +55,63 @@
         "components": {
             "type": "object",
             "properties": {
+                "netease:tier": {
+                    "$ref": "./components/netease_tier.json"
+                },
+                "netease:aabb": {
+                    "$ref": "./components/netease_aabb.json"
+                },
+                "netease:face_directional": {
+                    "$ref": "./components/netease_face_directional.json"
+                },
+                "netease:fuel": {
+                    "$ref": "./components/netease_fuel.json"
+                },
+                "netease:render_layer": {
+                    "$ref": "./components/netease_render_layer.json"
+                },
+                "netease:solid": {
+                    "$ref": "./components/netease_solid.json"
+                },
+                "netease:pathable": {
+                    "$ref": "./components/netease_pathable.json"
+                },
+                "netease:block_entity": {
+                    "$ref": "./components/netease_block_entity.json"
+                },
+                "netease:random_tick": {
+                    "$ref": "./components/netease_random_tick.json"
+                },
+                "netease:redstone_property": {
+                    "$ref": "./components/netease_redstone_property.json"
+                },
+                "netease:neighborchanged_sendto_script": {
+                    "$ref": "./components/netease_neighborchanged_sendto_script.json"
+                },
+                "netease:redstone": {
+                    "$ref": "./components/netease_redstone.json"
+                },
+                "netease:listen_block_remove": {
+                    "$ref": "./components/netease_listen_block_remove.json"
+                },
+                "netease:may_place_on": {
+                    "$ref": "./components/netease_may_place_on.json"
+                },
+                "netease:fire_resistant": {
+
+                },
+                "netease:block_properties": {
+
+                },
+                "netease:on_stand_on": {},
+                "netease:on_before_fall_on": {},
+                "netease:on_entity_inside": {},
+                "netease:on_step_on": {},
+                "netease:on_step_off": {},
+                "netease:block_random_offset": {},
+                "netease:block_chest": {},
+                "netease:no_crop_face_block": {},
+                "netease:custom_tips": {}
             },
             "patternProperties": {},
             "required": []
@@ -62,10 +119,8 @@
         "events": {
             "type": "object",
             "properties": {
-                
             },
             "additionalProperties": {
-                "$ref": "../../../common/definition/definition_event.json"
             }
         }
     },

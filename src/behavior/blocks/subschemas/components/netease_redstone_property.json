@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "bedrock_schemas.behavior.items.netease:redstone_property",
+    "description": "用于给自定义方块添加自定义方块实体。",
+    "type": "object",
+    "properties": {
+        "value": {
+            "type": "string",
+            "description": "目前只支持break_on_push，设置之后，方块可以被活塞破坏变成掉落物，否则，方块会被活塞推动而不破坏。",
+            "enum": ["break_on_push"]
+        }
+    },
+    "required": [
+    ],
+    "$comment": "edition:china;version:[1.10,1.16.100)|(1.16.100,*)"
+}

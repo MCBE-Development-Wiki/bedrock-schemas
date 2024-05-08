@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "bedrock_schemas.behavior.items.netease:block_entity",
+    "description": "用于给自定义方块添加自定义方块实体。",
+    "type": "object",
+    "properties": {
+        "tick": {
+            "type": "boolean",
+            "default": false,
+            "description": "为true时，当玩家进入方块tick范围时，该方块每秒会发送20次ServerBlockEntityTickEvent事件\n为false时，该方块不会发送ServerBlockEntityTickEvent事件"
+        },
+        "client_tick": {
+            "type": "boolean",
+            "default": false,
+            "description": "为true时，当玩家进入方块tick范围时，该方块每秒会发送20次ModBlockEntityTickClientEvent事件\n为false时，该方块不会发送ModBlockEntityTickClientEvent事件"
+        },
+        "movable": {
+            "type": "boolean",
+            "default": true,
+            "description": "为true时，该方块可被粘性活塞拉回\n为false时，该方块不可被粘性活塞拉回"
+        }
+    },
+    "required": [
+    ],
+    "$comment": "edition:china;version:[1.10,1.16.100)|(1.16.100,*)"
+}

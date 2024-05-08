@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "bedrock_schemas.behavior.items.netease:redstone",
+    "description": "用于配置自定义红石源与自定义红石机械元件；\n可以配置自定义红石的类型，如红石源或者红石机械元件；\n可以配置初始信号强度，默认为15。",
+    "type": "object",
+    "properties": {
+        "type": {
+            "type": "string",
+            "description": "红石类型：\nproducer：红石源\nconsumer：红石机械元件",
+            "enum": ["producer", "consumer"]
+        },
+        "strength": {
+            "type": "integer",
+            "default": 15,
+            "minimum": 0,
+            "maximum": 15
+        }
+    },
+    "required": [
+    ],
+    "$comment": "edition:china;version:[1.10,1.16.100)|(1.16.100,*)"
+}

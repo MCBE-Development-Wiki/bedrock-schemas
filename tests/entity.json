@@ -155,13 +155,13 @@
             "minecraft:buoyant": {
                 "apply_gravity": true
             },
-            "minecraft:behavior.python_custom:abcde": {
+            "minecraft:behavior.python_custom:aaa": {
                 "priority": 1,
-                "module_path": "",
-                "class_name": ""
-            },
-            "minecraft:behavior.python_custom:": {
-
+                "control_flags": [
+                    "move"
+                ],
+                "class_name": "a",
+                "module_path": ""
             }
         }
     }

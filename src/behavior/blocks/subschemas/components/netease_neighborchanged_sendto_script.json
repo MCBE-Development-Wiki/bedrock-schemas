@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "bedrock_schemas.behavior.items.netease:neighborchanged_sendto_script",
+    "description": "用于监测自定义方块周围是否有方块变化。",
+    "type": "object",
+    "properties": {
+        "value": {
+            "type": "boolean",
+            "default": false,
+            "description": "方块周围环境变化是否发送事件 BlockNeighborChangedServerEvent 到脚本层"
+        }
+    },
+    "required": [
+    ],
+    "$comment": "edition:china;version:[1.10,1.16.100)|(1.16.100,*)"
+}

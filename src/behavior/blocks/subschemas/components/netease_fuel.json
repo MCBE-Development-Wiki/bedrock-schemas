@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "bedrock_schemas.behavior.items.netease:fuel",
+    "description": "可燃类物品组件。允许该方块物品作为燃料在熔炉中燃烧。",
+    "type": "object",
+    "properties": {
+        "duration": {
+            "type": "number",
+            "default": 0,
+            "description": "可填，该物品可提供的熔炉燃烧时长（秒）。"
+        }
+    },
+    "required": [
+    ],
+    "$comment": "edition:china;version:[1.10,1.16.100)|(1.16.100,*)"
+}

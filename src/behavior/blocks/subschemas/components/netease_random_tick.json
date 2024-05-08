@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "bedrock_schemas.behavior.items.netease:fuel",
+    "description": "用于给自定义方块定义是否可以随机tick，并且设置该tick事件是否发送到脚本层。",
+    "type": "object",
+    "properties": {
+        "enable": {
+            "type": "boolean",
+            "default": false,
+            "description": "方块是否随机tick。"
+        },
+        "tick_to_script": {
+            "type": "boolean",
+            "default": false,
+            "description": "是否发送事件 BlockRandomTickServerEvent 到python脚本。"
+        }
+    },
+    "required": [
+    ],
+    "$comment": "edition:china;version:[1.10,1.16.100)|(1.16.100,*)"
+}

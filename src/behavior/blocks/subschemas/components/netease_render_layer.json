@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "bedrock_schemas.behavior.items.netease:render_layer",
+    "description": "用于设置方块渲染时使用的材质。",
+    "type": "object",
+    "properties": {
+        "value": {
+            "type": "string",
+            "enum": [
+                "opaque",
+                "alpha",
+                "blend",
+                "optionalAlpha"
+            ],
+            "description": "目前支持的材质有：\nopaque：不透明，即“terrain_opaque”材质。默认为此项\nalpha：全透明，即“terrain_alpha”材质，如火焰，该材质用于异形方块，用在方块类上但与其他方块重合时会出现闪烁，可以使用no_crop_face_block组件避免闪烁。\nblend：半透明，即“terrain_blend”材质，如彩色玻璃。\noptionalAlpha：局部透明，与alpha不同，alpha超过一定距离将不渲染，而optionalAlpha不会，能配合no_crop_face_block组件实现原版叶子效果。"
+        }
+    },
+    "required": [
+    ],
+    "$comment": "edition:china;version:[1.10,1.16.100)|(1.16.100,*)"
+}
