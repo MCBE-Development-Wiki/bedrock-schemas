@@ -107,6 +107,9 @@
                 },
                 "minecraft:can_join_raid": {
                     "$ref": "./components/minecraft_can_join_raid.json"
+                },
+                "minecraft:behavior.python_custom:": {
+                    "not": {}
                 }
             },
             "patternProperties": {

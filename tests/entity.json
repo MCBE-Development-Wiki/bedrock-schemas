@@ -157,7 +157,11 @@
             },
             "minecraft:behavior.python_custom:abcde": {
                 "priority": 1,
-                "module_path": ""
+                "module_path": "",
+                "class_name": ""
+            },
+            "minecraft:behavior.python_custom:": {
+
             }
         }
     }
