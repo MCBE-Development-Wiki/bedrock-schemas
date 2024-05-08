@@ -98,20 +98,41 @@
                     "$ref": "./components/netease_may_place_on.json"
                 },
                 "netease:fire_resistant": {
-
+                    "$ref": "./components/netease_fire_resistant.json"
                 },
                 "netease:block_properties": {
-
+                    "$ref": "./components/netease_block_properties.json"
                 },
-                "netease:on_stand_on": {},
-                "netease:on_before_fall_on": {},
-                "netease:on_entity_inside": {},
-                "netease:on_step_on": {},
-                "netease:on_step_off": {},
-                "netease:block_random_offset": {},
-                "netease:block_chest": {},
-                "netease:no_crop_face_block": {},
-                "netease:custom_tips": {}
+                "netease:on_stand_on": {
+                    "$ref": "./components/netease_on_stand_on.json"
+                },
+                "netease:on_before_fall_on": {
+                    "$ref": "./components/netease_on_before_fall_on.json"
+                },
+                "netease:on_after_fall_on": {
+                    "$ref": "./components/netease_on_after_fall_on.json"
+                },
+                "netease:on_entity_inside": {
+                    "$ref": "./components/netease_on_entity_inside.json"
+                },
+                "netease:on_step_on": {
+                    "$ref": "./components/netease_on_step_on.json"
+                },
+                "netease:on_step_off": {
+                    "$ref": "./components/netease_on_step_off.json"
+                },
+                "netease:block_random_offset": {
+                    "$ref": "./components/netease_block_random_offset.json"
+                },
+                "netease:block_chest": {
+                    "$ref": "./components/netease_block_chest.json"
+                },
+                "netease:no_crop_face_block": {
+                    "$ref": "./components/netease_no_crop_face_block.json"
+                },
+                "netease:custom_tips": {
+                    "$ref": "./components/netease_custom_tips.json"
+                }
             },
             "patternProperties": {},
             "required": []

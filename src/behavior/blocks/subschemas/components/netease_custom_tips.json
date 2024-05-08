@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "bedrock_schemas.behavior.items.netease:custom_tips",
+    "description": "该组件用于自定义方块Item的物品信息描述，与自定义物品中的 netease:customtips 作用相同",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "value": {
+            "type": "string",
+            "description": "物品的描述信息。"
+        }
+    },
+    "required": [
+    ],
+    "$comment": "edition:china;version:[1.10,1.16.100)|(1.16.100,*)"
+}

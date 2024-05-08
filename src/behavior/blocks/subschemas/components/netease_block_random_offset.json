@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "bedrock_schemas.behavior.items.netease:block_random_offset",
+    "description": "用于设置方块的偏移，能实现原版花朵的偏移效果。\n注意：制作可偏移方块时，请尽量配套使用方块模型，当使用贴图方块随机偏移时，若相邻方块是不透明方块，则该方块对应的面会被裁切渲染！！普通贴图方块的物品栏渲染也可能会有异常！！\n该组件会把方块的材质设置为透明，且不可与netease:render_layer的不透明材质一起共用，否则会出现渲染错误。",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "x_scope": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "description": "x轴方向的偏移范围，size为2的array，取值范围为0.0~1.0，如果两个值相同则为指定点。",
+            "items": {
+                "type": "number",
+                "default": [0, 0]
+            }
+        },
+        "z_scope": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "description": "z轴方向的偏移范围，size为2的array，取值范围为0.0~1.0，如果两个值相同则为指定点。",
+            "items": {
+                "type": "number",
+                "default": [0, 0]
+            }
+        }
+    },
+    "required": [
+    ],
+    "$comment": "edition:china;version:[1.10,1.16.100)|(1.16.100,*)"
+}

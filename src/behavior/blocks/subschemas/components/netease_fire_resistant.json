@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "bedrock_schemas.behavior.items.netease:fire_resistant",
+    "description": "用于配置自定义方块是否防火。设置为防火时，方块的掉落物会与下界合金一样，不会被火烧毁，掉进岩浆时会弹走。",
+    "type": "object",
+    "properties": {
+        "value": {
+            "type": "boolean",
+            "description": "是否防火。"
+        }
+    },
+    "required": [
+    ],
+    "$comment": "edition:china;version:[1.10,1.16.100)|(1.16.100,*)"
+}

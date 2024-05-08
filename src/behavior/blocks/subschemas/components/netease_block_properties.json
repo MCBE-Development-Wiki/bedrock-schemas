@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "bedrock_schemas.behavior.items.netease:block_properties",
+    "description": "用于配置自定义方块的方块属性。这些方块属性可以叠加，主要用于引擎对一些方块特性逻辑的判断。",
+    "type": "object",
+    "properties": {
+        "properties": {
+            "type": "array",
+            "description": "所有属性字符串。",
+            "items": {
+                "type": "string",
+                "description": "piston_block_grabber\t被活塞推动时是否带动旁边方块\nslime\t主要用于变为移动方块（例如被活塞推）时修改对实体力的计算\nbreaks_when_fallen_on_by_heavy\t当重力方块结束下落在该方块位置后，自身是否被毁坏\n如果方块碰撞盒体积使用netease:aabb或minecraft:entity_collision改小可能会导致无法触发（目前可参考范围是边长0.4以下不会触发）。",
+                "enum": [
+                    "piston_block_grabber",
+                    "slime",
+                    "breaks_when_fallen_on_by_heavy"
+                ]
+            }
+        }
+    },
+    "required": [
+    ],
+    "$comment": "edition:china;version:[1.10,1.16.100)|(1.16.100,*)"
+}

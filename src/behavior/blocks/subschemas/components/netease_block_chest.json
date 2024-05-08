@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "bedrock_schemas.behavior.items.netease:block_chest",
+    "description": "用于给方块添加箱子功能，使用了该组件会创建一个block_entity方块，会与其他block_entity逻辑有冲突，请谨慎使用。\n该组件会覆盖带有base_block及其相关组件的功能。\n使用了这个组件后请勿再配置netease:face_directional。\n使用SetBlockNew接口创建自定义箱子的时候，需要先调用一次SetBlockNew将目标位置方块设置为Air，再使用AddTimer延后调用SetBlockNew创建自定义箱子。",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "custom_description": {
+            "type": "string",
+            "description": "箱子UI上面显示的箱子名称，不填为空。"
+        },
+        "chest_capacity": {
+            "type": "integer",
+            "description": "必填，箱子的容量行数，取值范围1-8，如果can_pair取值为true且该值大于4，将自动变为4。"
+        },
+        "can_pair": {
+            "type": "boolean",
+            "default": false,
+            "description": "是否可以与隔壁箱子组合，合成一个大箱子。"
+        },
+        "is_shulker_box": {
+            "type": "boolean",
+            "default": false,
+            "description": "是否为潜影盒箱子，如果开启摧毁方块将不会掉落，与原版潜影盒功能相同，无法与隔壁箱子进行组合。"
+        },
+        "mute": {
+            "type": "boolean",
+            "default": false,
+            "description": "是否关闭箱子开启与关闭时的音效。"
+        },
+        "can_be_blocked": {
+            "type": "boolean",
+            "default": false,
+            "description": "是否能被阻挡，即箱子上面有阻挡的方块时能否打开箱子。"
+        }
+    },
+    "required": [
+        "chest_capacity"
+    ],
+    "$comment": "edition:china;version:[1.10,1.16.100)|(1.16.100,*)"
+}

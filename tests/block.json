@@ -1,0 +1,35 @@
+{
+    "$schema": "../src/behavior/blocks/block.json",
+    "format_version": "1.10",
+    "minecraft:block": {
+        "description": {
+            "identifier": "design:block",
+            "category": "none"
+        },
+        "components": {
+            "netease:may_place_on": {
+                "block": [
+                    "minecraft:diamond_blocvk"
+                ]
+            },
+            "netease:listen_block_remove": {
+                "value": false
+            },
+            "netease:aabb": {
+                "collision": {
+                    "min": [0.0, 0.0, 0.0],
+                    "max": [0.0, 0.0, 0.0]
+                },
+                "clip": {
+                    "min": [0.0, 0.0, 0.0],
+                    "max": [0.0, 0.0, 0.0]
+                }
+            },
+            "netease:block_properties": {
+                "properties": [
+                    "piston_block_grabber"
+                ]
+            }
+        }
+    }
+}
