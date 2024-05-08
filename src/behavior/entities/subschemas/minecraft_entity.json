@@ -110,10 +110,11 @@
                 }
             },
             "patternProperties": {
-                "^minecraft:behavior.python_custom:[a-zA-Z0-9_]*$": {
+                "^minecraft:behavior\\.python_custom:[a-zA-Z0-9_]*$": {
                     "$ref": "./components/minecraft_behavior_python_custom.json"
                 }
             },
+            "additionalProperties": false,
             "required": []
         },
         "events": {

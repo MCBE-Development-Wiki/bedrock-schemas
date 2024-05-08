@@ -154,6 +154,10 @@
             },
             "minecraft:buoyant": {
                 "apply_gravity": true
+            },
+            "minecraft:behavior.python_custom:abcde": {
+                "priority": 1,
+                "module_path": ""
             }
         }
     }

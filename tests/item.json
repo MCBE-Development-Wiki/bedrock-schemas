@@ -25,9 +25,15 @@
                 "variant": "stone"
               }
             },
-            "speed": 1
+            "speed": "1"
           }
         ]
+      }
+    },
+    "events": {
+      "on_use_on_block": {
+        "weight": 1,
+        "condition": "q.something"
       }
     }
   }
