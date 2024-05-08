@@ -89,9 +89,31 @@
                 },
                 "minecraft:break_blocks": {
                     "$ref": "./components/minecraft_break_blocks.json"
+                },
+                "minecraft:breathable": {
+                    "$ref": "./components/minecraft_breathable.json"
+                },
+                "minecraft:breedable": {
+                    "$ref": "./components/minecraft_breedable.json"
+                },
+                "minecraft:bribeable": {
+                    "$ref": "./components/minecraft_bribeable.json"
+                },
+                "minecraft:buoyant": {
+                    "$ref": "./components/minecraft_buoyant.json"
+                },
+                "minecraft:burns_in_daylight": {
+                    "$ref": "./components/minecraft_burns_in_daylight.json"
+                },
+                "minecraft:can_join_raid": {
+                    "$ref": "./components/minecraft_can_join_raid.json"
                 }
             },
-            "patternProperties": {},
+            "patternProperties": {
+                "^minecraft:behavior.python_custom:[a-zA-Z0-9_]*$": {
+                    "$ref": "./components/minecraft_behavior_python_custom.json"
+                }
+            },
             "required": []
         },
         "events": {

@@ -1,0 +1,7 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "bedrock_schemas.behavior.entities.minecraft:burns_in_daylight",
+    "title": "minecraft:burns_in_daylight",
+    "description": "Specifies if/how a mob burns in daylight.",
+    "type": "object"
+}

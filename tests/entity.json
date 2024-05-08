@@ -148,6 +148,12 @@
                         "on_block_broken": "hive_destroyed"
                     }
                 ]
+            },
+            "minecraft:annotation.break_door": {
+
+            },
+            "minecraft:buoyant": {
+                "apply_gravity": true
             }
         }
     }

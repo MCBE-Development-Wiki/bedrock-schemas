@@ -1,0 +1,44 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "bedrock_schemas.behavior.entities.minecraft:behavior_python_custom",
+    "title": "minecraft:behavior.python_custom",
+    "type": "object",
+    "description": "通过配置behavior_pack/entities中生物json的behavior，增加自定义behavior节点，并在python实现对应节点的逻辑，以实现自定义的生物行为。",
+    "additionalProperties": false,
+    "properties": {
+        "priority": {
+            "type": "integer",
+            "description": "行为的优先级。"
+        },
+        "module_path": {
+            "type": "string",
+            "examples": ["customEntityModScripts.placeTntToTarget"],
+            "description": "行为的python模块路径，以 \".\" 分隔。"
+        },
+        "class_name": {
+            "type": "string",
+            "examples": ["PlaceTntToTarget"],
+            "description": "行为的python类名。"
+        },
+        "arg_dict": {
+            "type": "object",
+            "description": "行为的参数，会被传至python实例中。",
+            "additionalProperties": true
+        },
+        "control_flags": {
+            "description": "控制标志，包含相同控制标志的行为被为冲突，同一时刻下冲突的行为最多只有一个会被执行。可用的标志有move, look, jump。",
+            "type": "string",
+            "enum": [
+                "move",
+                "look",
+                "jump"
+            ],
+            "minimum": 1
+        }
+    },
+    "required": [
+        "priority",
+        "module_path",
+        "class_name"
+    ]
+}

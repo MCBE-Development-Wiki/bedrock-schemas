@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "bedrock_schemas.behavior.entities.minecraft:bribeable",
+    "title": "minecraft:bribeable",
+    "description": "Defines the way an entity can get into the 'bribed' state.",
+    "type": "object",
+    "properties": {
+        "bribe_cooldown": {
+            "type": "number",
+            "default": 2.0,
+            "description": "Time in seconds before the Entity can be bribed again."
+        },
+        "bribe_items": {
+            "type": "array",
+            "items": {
+                "$ref": "../../../../common/definition/item/item_descriptor.json"
+            },
+            "description": "The list of items that can be used to bribe the entity."
+        }
+    }
+}
