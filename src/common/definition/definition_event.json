@@ -1,4 +1,4 @@
-﻿{
+{
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "bedrock_schemas.common.definition.definition_event",
   "$ref": "#/definitions/definition_event",
