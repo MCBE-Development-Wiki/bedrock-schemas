@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "bedrock_schemas.behavior.items.netease:redstone",
+    "$id": "bedrock_schemas.behavior.blocks.netease:redstone",
     "description": "用于配置自定义红石源与自定义红石机械元件；\n可以配置自定义红石的类型，如红石源或者红石机械元件；\n可以配置初始信号强度，默认为15。",
     "type": "object",
     "properties": {

@@ -9,12 +9,29 @@
         "components": {
             "netease:may_place_on": {
                 "block": [
-                    "minecraft:diamond_blocvk"
+                    "minecraft:diamond_block"
                 ]
             },
             "netease:listen_block_remove": {
                 "value": false
             },
+            "minecraft:destructible_by_mining": {
+                "item_specific_speeds": [
+                    {
+                        "item": "minecraft:diamond_hoe",
+                        "destroy_speed": 1.0
+                    }
+                ]
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "face_dimming": true
+                }
+            },
+            "minecraft:transformation": {
+                "translation": []
+            },
+            "minecraft:loot": "loot_tables/123/123.json",
             "netease:aabb": {
                 "collision": {
                     "min": [0.0, 0.0, 0.0],

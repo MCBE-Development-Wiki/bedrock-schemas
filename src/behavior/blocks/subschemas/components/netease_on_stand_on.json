@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "bedrock_schemas.behavior.items.netease:on_stand_on",
+    "$id": "bedrock_schemas.behavior.blocks.netease:on_stand_on",
     "description": "用于触发实体站在方块上的事件。",
     "type": "object",
     "additionalProperties": false,

@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "bedrock_schemas.behavior.items.netease:block_chest",
+    "$id": "bedrock_schemas.behavior.blocks.netease:block_chest",
     "description": "用于给方块添加箱子功能，使用了该组件会创建一个block_entity方块，会与其他block_entity逻辑有冲突，请谨慎使用。\n该组件会覆盖带有base_block及其相关组件的功能。\n使用了这个组件后请勿再配置netease:face_directional。\n使用SetBlockNew接口创建自定义箱子的时候，需要先调用一次SetBlockNew将目标位置方块设置为Air，再使用AddTimer延后调用SetBlockNew创建自定义箱子。",
     "type": "object",
     "additionalProperties": false,

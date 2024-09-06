@@ -55,6 +55,60 @@
         "components": {
             "type": "object",
             "properties": {
+                "minecraft:breathability": {
+                    "$ref": "./components/minecraft_breathability.json"
+                },
+                "minecraft:collision_box": {
+                    "$ref": "./components/minecraft_collision_box.json"
+                },
+                "minecraft:crafting_table": {
+                    "$ref": "./components/minecraft_crafting_table.json"
+                },
+                "minecraft:destructible_by_explosion": {
+                    "$ref": "./components/minecraft_destructible_by_explosion.json"
+                },
+                "minecraft:destructible_by_mining": {
+                    "$ref": "./components/minecraft_destructible_by_mining.json"
+                },
+                "minecraft:display_name": {
+                    "$ref": "./components/minecraft_display_name.json"
+                },
+                "minecraft:flammable": {
+                    "$ref": "./components/minecraft_flammable.json"
+                },
+                "minecraft:friction": {
+                    "$ref": "./components/minecraft_friction.json"
+                },
+                "minecraft:geometry": {
+                    "$ref": "./components/minecraft_geometry.json"
+                },
+                "minecraft:light_dampening": {
+                    "$ref": "./components/minecraft_light_dampening.json"
+                },
+                "minecraft:light_emission": {
+                    "$ref": "./components/minecraft_light_emission.json"
+                },
+                "minecraft:loot": {
+                    "$ref": "./components/minecraft_loot.json"
+                },
+                "minecraft:map_color": {
+                    "$ref": "./components/minecraft_map_color.json"
+                },
+                "minecraft:material_instances": {
+                    "$ref": "./components/minecraft_material_instances.json"
+                },
+                "minecraft:placement_filter": {
+                    "$ref": "./components/minecraft_placement_filter.json"
+                },
+                "minecraft:selection_box": {
+                    "$ref": "./components/minecraft_selection_box.json"
+                },
+                "tag:": {
+                    "$ref": "./components/tag.json"
+                },
+                "minecraft:transformation": {
+                    "$ref": "./components/minecraft_transformation.json"
+                },
                 "netease:tier": {
                     "$ref": "./components/netease_tier.json"
                 },

@@ -1,0 +1,61 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "bedrock_schemas.behavior.blocks.minecraft:transformation",
+    "description": "The block's translation around the center of the cube in degrees. The rotation order is [x, y, z]. Angles need to be in multiples of 90.",
+    "type": "object",
+    "properties": {
+        "translation": {
+            "type": "array",
+            "description": "Amount the block should be translated along each axis. \"Translation\" is specified as [x, y, z] using floating point values.",
+            "items": {
+                "type": "number",
+                "minItems": 3,
+                "maxItems": 3
+            },
+            "default": [0, 0, 0]
+        },
+        "scale": {
+            "type": "array",
+            "description": "Amount the block should be scaled along each axis. \"Scale\" is specified as [x, y, z] using floating point values.",
+            "items": {
+                "type": "number",
+                "minItems": 3,
+                "maxItems": 3
+            },
+            "default": [1, 1, 1]
+        },
+        "scale_pivot": {
+            "type": "array",
+            "description": "Offset to the pivot point around which to apply the scale. \"scale_pivot\" is specified as [x, y, z] using floating point values.",
+            "items": {
+                "type": "number",
+                "minItems": 3,
+                "maxItems": 3
+            },
+            "default": [0, 0, 0]
+        },
+        "rotation": {
+            "type": "array",
+            "description": "Amount in degrees the block should be rotated on each axis. \"rotation\" is specified as [x, y, z] using floating point values and must be axis aligned, otherwise the value will be rounded to the nearest axis-aligned value.",
+            "items": {
+                "type": "number",
+                "minItems": 3,
+                "maxItems": 3
+            },
+            "default": [0, 0, 0]
+        },
+        "rotation_pivot": {
+            "type": "array",
+            "description": "Offset to the pivot point around which to apply the rotation. \"rotation_pivot\" is specified as [x, y, z] using floating point values.",
+            "items": {
+                "type": "number",
+                "minItems": 3,
+                "maxItems": 3
+            },
+            "default": [0, 0, 0]
+        }
+    },
+    "required": [
+    ],
+    "$comment": "version:(1.16.100,*)"
+}

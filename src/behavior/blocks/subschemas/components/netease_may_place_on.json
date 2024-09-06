@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "bedrock_schemas.behavior.items.netease:may_place_on",
+    "$id": "bedrock_schemas.behavior.blocks.netease:may_place_on",
     "description": "用于配置自定义方块可存在于哪些方块的上面。\n会生效于玩家右键放置方块时；以及已存在的方块下方的方块发生改变时。",
     "type": "object",
     "properties": {

@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "bedrock_schemas.behavior.items.netease:face_directional",
+    "$id": "bedrock_schemas.behavior.blocks.netease:face_directional",
     "description": "用于设置方块的多面向。主要用于多面向的功能。",
     "type": "object",
     "properties": {

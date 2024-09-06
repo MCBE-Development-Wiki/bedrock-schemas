@@ -1,0 +1,40 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "bedrock_schemas.behavior.blocks.minecraft:selection_box",
+    "description": "Defines the area of the block that is selected by the player's cursor. If set to true, default values are used. If set to false, this block is not selectable by the player's cursor. If this component is omitted, default values are used.",
+    "oneOf": [
+        {
+            "type": "boolean",
+            "default": true,
+            "description": "This component can be specified as a Boolean. If this component is omitted, the default value for this component is true, which will give your block the default values for its parameters (a selection box the size/shape of a regular block). Parameters"
+        },
+        {
+            "type": "object",
+            "properties": {
+                "origin": {
+                    "type": "array",
+                    "default": [-8.0, 0.0, -8.0],
+                    "description": "Minimal position of the bounds of the selection box. \"origin\" is specified as [x, y, z] and must be in the range (-8, 0, -8) to (8, 16, 8), inclusive.",
+                    "items": {
+                        "type": "number",
+                        "minLength": 3,
+                        "maxLength": 3
+                    }
+                },
+                "size": {
+                    "type": "array",
+                    "default": [16.0, 16.0, 16.0],
+                    "description": "Size of each side of the selection box. Size is specified as [x, y, z]. \"origin\" + \"size\" must be in the range (-8, 0, -8) to (8, 16, 8), inclusive.",
+                    "items": {
+                        "type": "number",
+                        "minItems": 3,
+                        "maxItems": 3
+                    }
+                }
+            }
+        }
+    ],
+    "required": [
+    ],
+    "$comment": "version:(1.16.100,*)"
+}

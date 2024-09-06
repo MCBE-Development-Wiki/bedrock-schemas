@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "bedrock_schemas.behavior.items.netease:on_after_fall_on",
+    "$id": "bedrock_schemas.behavior.blocks.netease:on_after_fall_on",
     "description": "用于触发实体下落至方块后的事件，主要用于力的计算。",
     "type": "object",
     "additionalProperties": false,

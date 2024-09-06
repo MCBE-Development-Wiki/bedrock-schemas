@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "bedrock_schemas.behavior.items.netease:block_random_offset",
+    "$id": "bedrock_schemas.behavior.blocks.netease:block_random_offset",
     "description": "用于设置方块的偏移，能实现原版花朵的偏移效果。\n注意：制作可偏移方块时，请尽量配套使用方块模型，当使用贴图方块随机偏移时，若相邻方块是不透明方块，则该方块对应的面会被裁切渲染！！普通贴图方块的物品栏渲染也可能会有异常！！\n该组件会把方块的材质设置为透明，且不可与netease:render_layer的不透明材质一起共用，否则会出现渲染错误。",
     "type": "object",
     "additionalProperties": false,

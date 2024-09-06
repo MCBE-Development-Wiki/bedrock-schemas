@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "bedrock_schemas.behavior.items.netease:tier",
+    "$id": "bedrock_schemas.behavior.blocks.netease:tier",
     "description": "可燃类物品组件。允许该物品作为燃料在熔炉中燃烧。",
     "type": "object",
     "properties": {

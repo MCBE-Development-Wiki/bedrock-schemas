@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "bedrock_schemas.behavior.items.netease:on_entity_inside",
+    "$id": "bedrock_schemas.behavior.blocks.netease:on_entity_inside",
     "description": "用于触发实体碰撞盒所在位置有方块时的事件（判断位置逻辑有无方块，与方块碰撞盒大小无关）。",
     "type": "object",
     "additionalProperties": false,

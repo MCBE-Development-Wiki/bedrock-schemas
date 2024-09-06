@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "bedrock_schemas.behavior.items.netease:block_properties",
+    "$id": "bedrock_schemas.behavior.blocks.netease:block_properties",
     "description": "用于配置自定义方块的方块属性。这些方块属性可以叠加，主要用于引擎对一些方块特性逻辑的判断。",
     "type": "object",
     "properties": {

@@ -1,0 +1,12 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "bedrock_schemas.behavior.blocks.minecraft:light_dampening",
+    "description": "The amount that light will be dampened when it passes through the block, in a range (0-15). Higher value means the light will be dampened more.",
+    "type": "integer",
+    "minimum": 0,
+    "maximum": 15,
+    "default": 15,
+    "required": [
+    ],
+    "$comment": "(1.16.100,*)"
+}

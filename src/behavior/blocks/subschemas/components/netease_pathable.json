@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "bedrock_schemas.behavior.items.netease:pathable",
+    "$id": "bedrock_schemas.behavior.blocks.netease:pathable",
     "description": "用于设置游戏内AI在进行寻路时，方块是否被当作障碍物。",
     "type": "object",
     "properties": {

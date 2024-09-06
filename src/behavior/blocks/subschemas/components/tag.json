@@ -1,0 +1,10 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "bedrock_schemas.behavior.blocks.tag:",
+    "description": "tag: is an empty JSON Object that defines a tag to be added to a block. The component has no body or parameters. It is simply a flag, and when the block is parsed it will be added to the block's tag list.",
+    "type": "object",
+    "pattern": "^tag:([a-zA-Z_]+):([a-zA-Z_]+)$",
+    "required": [
+    ],
+    "$comment": "version:(1.16.100,*)"
+}

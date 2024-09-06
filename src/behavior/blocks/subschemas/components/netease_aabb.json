@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "bedrock_schemas.behavior.items.netease:aabb",
+    "$id": "bedrock_schemas.behavior.blocks.netease:aabb",
     "description": "用于设置方块的碰撞盒。\n注意事项：\n1.无碰撞箱的方块请将collision的每个项都设置为0\n2.有碰撞箱的方块，clip的范围需要小于或等于collision的范围，否则弹射物命中时会异常\n3.aabb的min不要小于[-1, -1, -1]，max不要大于[2, 2, 2]",
     "type": "object",
     "properties": {

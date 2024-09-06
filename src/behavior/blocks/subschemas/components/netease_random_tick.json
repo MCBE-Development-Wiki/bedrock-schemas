@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "bedrock_schemas.behavior.items.netease:fuel",
+    "$id": "bedrock_schemas.behavior.blocks.netease:fuel",
     "description": "用于给自定义方块定义是否可以随机tick，并且设置该tick事件是否发送到脚本层。",
     "type": "object",
     "properties": {

@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "bedrock_schemas.behavior.items.netease:connection",
+    "$id": "bedrock_schemas.behavior.blocks.netease:connection",
     "description": "用于给自定义方块定义“连接”属性\n使用枚举的方式配置该方块与哪些方块具有“连接”属性，并且此属性是单向的。不支持附加值。\n由于方块更新的特性，“床”和“旗帜”方块在区块边缘放置时，与其他方块会出现连接失败。",
     "type": "object",
     "properties": {
