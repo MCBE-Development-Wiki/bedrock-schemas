@@ -25,5 +25,5 @@
     ],
     "required": [
     ],
-    "$comment": "(1.16.100,*)"
+    "$comment": "version:(1.16.100,*)"
 }
